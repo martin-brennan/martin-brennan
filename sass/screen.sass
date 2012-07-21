@@ -1,0 +1,300 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import "compass/css3/transition"
+
+/* Colour Variables */
+$background: #f3f3f3
+$mainblue: #3f61b7
+$blackgrey: #222
+$midgrey: #333
+$lightgrey: #666
+$metagrey: #686868
+$code-bg: #e5e5e5
+$code-border: #ccc
+
+/* Font Variables */
+$proxima: "proxima-nova", Helvetica, Helvetica Neue, Arial, sans-serif
+$pragmatica: "pragmatica-web", Arial, Helvetica, sans-serif
+$code-font: Monaco, Consolas, monospace
+
+/* Mixins */
+=white-text-shadow
+	text-shadow: 0 1px rgba(255,255,255,0.9)
+
+=bold-font($colour)
+	font-style: normal
+	font-weight: 700
+	color: $colour
+
+=normal-font($colour)
+	font-style: normal
+	font-weight: 400
+	color: $colour
+
+=header-height
+	height: 160px
+	line-height: 185px
+
+=shadow-highspread
+	box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.2)
+	-webkit-box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.2)
+	-moz-box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.2)
+
+/* Basic styles and fixes */
+html, body
+	font-size: 100%
+	background-color: $background
+
+.clearfix
+	clear: both
+
+.noshow
+	display: none
+
+/* Font styles */
+
+h1
+	+white-text-shadow
+	font: 2.25em/1.4em $proxima
+	+bold-font($mainblue)
+	a, a:visited
+		color: $mainblue
+		text-decoration: none
+h2
+	font: 2em/1.4em $proxima
+	+bold-font($blackgrey)
+
+h3
+	font: 1.5em/1.4em $proxima
+	+bold-font($blackgrey)
+
+h4
+	font: 1.4em/1.4em $pragmatica
+	+bold-font($blackgrey)
+
+p
+	font: 1.1em/2.2em $pragmatica
+	+normal-font($midgrey)
+	margin: 20px 0
+	strong
+		font-weight: 700
+	em
+		font-style: italic
+	code
+		font: 0.8em/1em $code-font
+		padding: 5px
+		background-color: $code-bg
+		border: 1px solid $code-border
+		border-radius: 5px
+		white-space: normal
+		word-wrap: break-word
+	&.subtitle
+		color: $metagrey
+	&.form-submit
+		margin: 3px 0
+	&.post-meta
+		font: 1em/1.1em $pragmatica !important
+		color: $metagrey
+		margin: 10px 0 0 0
+
+
+blockquote
+	margin-left: 40px
+	border-left: 5px solid #666
+	color: $lightgrey
+	padding: 0 0 0 15px
+
+pre
+	padding: 10px
+	background-color: $code-bg
+	border: 1px solid $code-border
+	border-radius: 5px
+	white-space: prewrap
+	word-wrap: break-word
+	margin: 20px 0
+	code
+		font: 0.9em/1.7em $code-font
+
+/* List styles */
+ul
+	margin: 0 0 0 50px
+	list-style-type: disc
+
+li
+	+normal-font($midgrey)
+	font: 1.1em/2.2em $pragmatica
+	pre
+		white-space: normal
+	&.comment
+		padding: 20px
+		background-color: white
+		border: 1px solid $code-border
+		margin: 20px 0
+		list-style-type: none
+		+shadow-highspread
+		p, h4
+			margin: 0
+			line-height: 1.2em !important
+		li
+			font-size: 100%
+	
+a, a:visited
+	+bold-font($mainblue)
+
+/* Header styles */
+.header-left
+	+header-height
+	float: left
+	a
+		text-decoration: none
+
+.header-right
+	+header-height
+	float: right
+	text-align: right
+	p, h4
+		margin: 0
+		line-height: 1.2em !important
+	margin: 45px 0 0 15px
+
+.head-avatar
+	float: left
+	img
+		border: 3px solid $mainblue
+		border-radius: 5px
+
+.head-martin
+	a, a:visited
+		text-decoration: none
+	float: left
+	p, h4
+		margin: 0
+		line-height: 1.2em !important
+	margin: 45px 0 0 15px
+
+.header-nav
+	li
+		list-style-type: none
+		float: left
+		padding: 0 0 0 15px
+		font-size: 100%
+		a, a:visited
+			width: 80px
+			color: $blackgrey
+			font-weight: auto
+			text-decoration: none
+
+/* Comment and post styles */
+.post-meta
+	a
+		color: $metagrey
+		text-decoration: none
+
+.post-box
+	margin: 0 0 60px 0
+
+.comment-meta
+	margin: 0 0 0 80px
+	padding: 10px 0
+	a
+		color: black
+		text-decoration: none
+
+.comment-author-avatar
+	float: left
+	img
+		border: 3px solid $mainblue
+		border-radius: 5px
+
+.comment-text
+	margin: 20px 0
+
+.bypostauthor
+	border-left: 4px solid $mainblue !important
+
+#respond
+	margin: 100px 0 10px 0
+
+.comments-structure
+	width: 100%
+	margin: 20px 0 5px 0
+	input[type="text"], textarea
+		font: 1.1em/1em $pragmatica
+		+normal-font($blackgrey)
+	input[type="text"]
+		padding: 5px 10px
+		margin-left: 10px
+	textarea
+		width: 98%
+		padding: 10px
+	p
+		margin: 6px 0
+
+/* Sidebar styles */
+.side-list
+	li, li a
+		list-style: none
+		+normal-font($metagrey)
+		text-decoration: none
+		margin: 5px 0
+		line-height: 1.5em
+	ul
+		margin: 20px 0
+
+#sidebar
+	padding: 20px 0
+
+.scrolltop
+	cursor: pointer
+
+/* Footer styles */
+ul.footer-nav
+	list-style-type: none
+	margin: 0
+	padding: 0
+	text-align: center
+	li
+		display: inline !important
+		padding: 0 10px
+	a
+		display: inline-block !important
+		text-decoration: none
+	h4
+		font: 1.2em/1em $proxima
+		+bold-font($blackgrey)
+
+.footer
+	text-align: center
+	width: 100%
+	p.subtitle
+		margin: 4px 0
+		font: 0.7em/1em $pragmatica
+	margin: 20px 0
+
+/* Media queries */
+@media all and (max-device-width: 768px)
+	#sidebar
+		display: none !important
+	body
+		font-size: 150%
+	.head-avatar
+		display: none
+	.header-left, .header-right
+		p.subtitle
+			display: none
+		height: 100px
+
+@media all and (max-width: 768px)
+	#sidebar
+		display: none !important
+	
+@media (max-width: 870px)
+	p
+		&.post-meta
+			line-height: 1.5em !important
+			+transition(line-height, 0.5s)
