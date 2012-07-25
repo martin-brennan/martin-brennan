@@ -9,7 +9,6 @@
 <?php wp_list_comments('type=comment&callback=advanced_comment'); ?>
 
 <?php
-
 $defaults = array( 'fields' => apply_filters( 'comment_form_default_fields', array(
     'author' => '<table class="comments-structure"><tr><td style="width: 75px;">' .
     			'<p class="comment-form-author"><strong>' .
@@ -29,8 +28,8 @@ $defaults = array( 'fields' => apply_filters( 'comment_form_default_fields', arr
                 '<label for="url">' . __( 'Website' ) . '</label>' .
                 '</strong></p></td><td><input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" tabindex="3" />' .
                 '<!-- #<span class="hiddenSpellError" pre="">form-section-url</span> .form-section --></p></td></tr></table>' ) ),
-    'comment_field' => '<table class="comments-structure"><tr><td colspan="2"><p class="comment-form-comment"><strong>' .
-                '<label for="comment">' . __( 'Comment' ) . '</label></strong></td></tr>' .
+    'comment_field' => "<table class='comments-structure'><tr><td colspan='2'><p class='comment-form-comment'><strong>" .
+                '<label for="comment">' . __( 'Comment' ) . "</label></strong><input id='submit-comment' type='image' src='" . get_bloginfo( 'template_directory' ) . "/img/comment-submit.png' name='submit' alt='Submit' class='comment-submit' /></td></tr>" .
                 '<tr><td colspan="2"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="4" aria-required="true"></textarea>' .
                 '</p><!-- #form-section-comment .form-section --></tr></td></table>',
     'must_log_in' => '

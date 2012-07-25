@@ -8,6 +8,8 @@ $(document).ready(function(){
               var comment = $('#comment').val();
               comment = comment.replace(/\r<code>/g, "<code>");
               comment = comment.replace(/\n<code>/g, "<code>");
+              comment = comment.replace(/<code>\r/g, "<code>");
+              comment = comment.replace(/<code>\n/g, "<code>");
               $('#comment').val(comment);
        });
        $('.scrolltop').click(function(){

@@ -17,6 +17,7 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/mb.js"></script>
 		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/1140/css3-mediaqueries.js"></script>
+		<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/date.js"></script>
 		<?php wp_head(); ?>
 	</head>
 	<body>
@@ -36,10 +37,11 @@
 				</div>
 				<div class="header-right">
 					<ul class="header-nav">
-						<li><h4><a href="/">Blog</a></h4></li>
-						<li><h4><a href="/about">About</a></h4></li>
-						<li><h4><a href="/archive">Archive</a></h4></li>
-						<li><h4><a href="http://www.github.com/Martin-Brennan">Github</a></h4></li>
+						<li><h4><a href="/" title="Blog">Blog</a></h4></li>
+						<li><h4><a href="/about" title="About">About</a></h4></li>
+						<li><h4><a href="/archive" title="Archive">Archive</a></h4></li>
+						<li><h4><a href="/projects" title="Projects">Projects</a></h4></li>
+						<li><h4><a href="http://www.github.com/Martin-Brennan" target="_blank" title="Github">Github</a></h4></li>
 					</ul>
 					<div class="clearfix"></div>
 					<p class="subtitle">I love web development, and I hope you will too!</p>

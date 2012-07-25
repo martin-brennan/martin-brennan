@@ -1,4 +1,7 @@
 <div id="sidebar">
+	<div class="search-side">
+		<?php get_search_form(); ?>
+	</div>
 	<h4><strong>Categories</strong></h4>
 	<div class="side-list">
 		<ul><?php wp_list_categories('title_li='); ?></ul>

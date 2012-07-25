@@ -56,6 +56,12 @@ html, body
 .noshow
 	display: none
 
+#wpadminbar
+	.quicklinks
+		.menupop
+			a > span
+				padding-right: 1em !important
+
 /* Font styles */
 
 h1
@@ -68,6 +74,7 @@ h1
 h2
 	font: 2em/1.4em $proxima
 	+bold-font($blackgrey)
+	margin: 10px 0
 
 h3
 	font: 1.5em/1.4em $proxima
@@ -97,10 +104,20 @@ p
 		color: $metagrey
 	&.form-submit
 		margin: 3px 0
-	&.post-meta
+	&.post-meta, &.post-meta-spaced
 		font: 1em/1.1em $pragmatica !important
 		color: $metagrey
 		margin: 10px 0 0 0
+	&.post-meta-spaced
+		font: 1em/2em $pragmatica !important
+	&.repo-info
+		@extend .post-meta
+		float: right
+		margin: 5px 0
+		a
+			text-decoration: none
+			+bold-font($metagrey)
+			vertical-align: middle
 
 
 blockquote
@@ -128,8 +145,6 @@ ul
 li
 	+normal-font($midgrey)
 	font: 1.1em/2.2em $pragmatica
-	pre
-		white-space: normal
 	&.comment
 		padding: 20px
 		background-color: white
@@ -142,6 +157,13 @@ li
 			line-height: 1.2em !important
 		li
 			font-size: 100%
+
+ul.archive-list
+	list-style-type: none
+	margin: 0 10px
+	li
+		padding: 0 40px
+		background: url(../img/list-branch.png) no-repeat left center
 	
 a, a:visited
 	+bold-font($mainblue)
@@ -190,7 +212,7 @@ a, a:visited
 			text-decoration: none
 
 /* Comment and post styles */
-.post-meta
+.post-meta, .post-meta-spaced
 	a
 		color: $metagrey
 		text-decoration: none
@@ -226,14 +248,21 @@ a, a:visited
 	input[type="text"], textarea
 		font: 1.1em/1em $pragmatica
 		+normal-font($blackgrey)
+		border: 1px solid #CCC
 	input[type="text"]
 		padding: 5px 10px
 		margin-left: 10px
 	textarea
-		width: 98%
+		width: 98% !important
 		padding: 10px
 	p
 		margin: 6px 0
+
+#submit
+	display: none
+
+#submit-comment
+	float: right
 
 /* Sidebar styles */
 .side-list
@@ -251,6 +280,14 @@ a, a:visited
 
 .scrolltop
 	cursor: pointer
+
+.search-side
+	input[type="text"]
+		font: 1.1em/1em $pragmatica
+		+normal-font($blackgrey)
+		border: 1px solid #CCC
+		width: 150px
+	margin: 0 0 20px 0
 
 /* Footer styles */
 ul.footer-nav
@@ -274,10 +311,52 @@ ul.footer-nav
 	p.subtitle
 		margin: 4px 0
 		font: 0.7em/1em $pragmatica
-	margin: 20px 0
+	margin: 100px 0 20px 0
+
+/* Page-specific styles */
+.project-item
+	margin: 25px 0
+	img
+		border: 3px solid $blackgrey
+		border-radius: 5px
+		float: right
+		margin: 45px 0 0 20px
+	p
+		margin: 4px 0
+
+.about-stats
+	float: right
+	img
+		margin: 35px 0 0 20px
+		border: 3px solid $blackgrey
+		border-radius: 5px
 
 /* Media queries */
-@media all and (max-device-width: 768px)
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)
+	#sidebar
+		display: none !important
+	body
+		font-size: 125%
+	.head-avatar
+		display: none
+	.header-left, .header-right
+		p.subtitle
+			display: none
+		height: 100px
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+	#sidebar
+		display: none !important
+	body
+		font-size: 125%
+	.head-avatar
+		display: none
+	.header-left, .header-right
+		p.subtitle
+			display: none
+		height: 100px
+
+
+@media only screen and (max-device-width: 768px)
 	#sidebar
 		display: none !important
 	body
@@ -288,6 +367,11 @@ ul.footer-nav
 		p.subtitle
 			display: none
 		height: 100px
+	.header-nav li
+		font-size: 80%
+		padding-top: 4px
+	p.repo-info
+		display: none !important
 
 @media all and (max-width: 768px)
 	#sidebar
