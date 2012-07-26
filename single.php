@@ -1,5 +1,6 @@
 	<!-- Get the header.php file -->
 	<?php get_header(); ?>
+	<div class="container">
 	<div class="row" style="overflow: visible !important;">
 			<div class="ninecol">
 				<!-- The Loop -->
@@ -8,7 +9,7 @@
 						<!-- Post title -->
 						<h1><?php the_title(); ?></h1>
 						<p class="post-meta">Posted on <strong><? the_date(); ?></strong> by <strong><? the_author(); ?></strong>. <strong><?php comments_popup_link('Leave a comment', '1 Comment', '% Comments'); ?></strong>. Posted under <?php the_category(', '); ?>.</p>
-						<br/>
+						<div class="post-share"><?php dd_fblike_generate('Like Button Count') ?><?php dd_twitter_generate('Compact','twitter_username') ?><?php dd_google1_generate('Compact (20px)') ?></div>
 						<!-- Post content -->
 						<?php the_content(); ?>
 						<!-- Edit post link -->

@@ -15,11 +15,15 @@
 		<ul>
 			<li><a href="#">Subscribe via RSS</a></li>
 			<li><a href="#">Subscribe via Email</a></li>
+			<br/>
+			<a href="https://twitter.com/mjrbrennan" class="twitter-follow-button" data-show-count="false">Follow @mjrbrennan</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</ul>
 	</div>
 	<div class="scrolltop noshow">
 		<p><code>^ Scroll to top ^</code></p>
 	</div>
+</div>
 </div>
 </div>
 </div>
