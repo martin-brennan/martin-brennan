@@ -30,10 +30,25 @@ Template Name: Archives
 							'title_li' => ''
 						);
 						wp_list_categories($args); 
-
 					?>
 				</ul>
-
+				<h2>Tags</h2>
+				<div class="tag-cloud">
+					<?php wp_tag_cloud($args = array(
+					    'smallest'                  => 12, 
+					    'largest'                   => 24,
+					    'unit'                      => 'px', 
+					    'number'                    => 30,  
+					    'format'                    => 'flat',
+					    'orderby'                   => 'name', 
+					    'order'                     => 'ASC',
+					    'exclude'                   => null, 
+					    'include'                   => null, 
+					    'topic_count_text_callback' => default_topic_count_text,
+					    'link'                      => 'view', 
+					    'taxonomy'                  => 'post_tag', 
+					    'echo'                      => true )); ?>
+				</div>
 			</div>
 		</div>
 		<div class="threecol last">
