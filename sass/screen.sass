@@ -6,6 +6,7 @@
 
 @import compass/reset
 @import "compass/css3/transition"
+@import "compass/css3/border-radius"
 
 /* Colour Variables */
 $background: #f3f3f3
@@ -62,6 +63,12 @@ html, body
 			a > span
 				padding-right: 1em !important
 
+img.aligncenter
+	display: block
+	margin: 0 auto
+	border: 3px solid $blackgrey
+	@include border-radius(5px)
+
 /* Font styles */
 
 h1
@@ -97,7 +104,7 @@ p
 		padding: 5px
 		background-color: $code-bg
 		border: 1px solid $code-border
-		border-radius: 5px
+		@include border-radius(5px)
 		white-space: normal
 		word-wrap: break-word
 	&.subtitle
@@ -130,7 +137,7 @@ pre
 	padding: 10px
 	background-color: $code-bg
 	border: 1px solid $code-border
-	border-radius: 5px
+	@include border-radius(5px)
 	white-space: prewrap
 	word-wrap: break-word
 	margin: 20px 0
@@ -188,7 +195,7 @@ a, a:visited
 	float: left
 	img
 		border: 3px solid $mainblue
-		border-radius: 5px
+		@include border-radius(5px)
 
 .head-martin
 	a, a:visited
@@ -234,7 +241,7 @@ a, a:visited
 	float: left
 	img
 		border: 3px solid $mainblue
-		border-radius: 5px
+		@include border-radius(5px)
 
 .comment-text
 	margin: 20px 0
@@ -321,7 +328,7 @@ ul.footer-nav
 	margin: 25px 0
 	img
 		border: 3px solid $blackgrey
-		border-radius: 5px
+		@include border-radius(5px)
 		float: right
 		margin: 45px 0 0 20px
 	p
@@ -332,7 +339,7 @@ ul.footer-nav
 	img
 		margin: 35px 0 0 20px
 		border: 3px solid $blackgrey
-		border-radius: 5px
+		@include border-radius(5px)
 
 .tag-cloud
 	a, a:visited
