@@ -12,7 +12,7 @@
 	</div>
 	<h4><strong>Categories</strong></h4>
 	<div class="side-list">
-		<ul><?php wp_list_categories('title_li='); ?></ul>
+		<ul><?php wp_list_categories('show_count=1&title_li='); ?></ul>
 	</div>
 	<h4><strong>Post Archives</strong></h4>
 	<div class="side-list">
