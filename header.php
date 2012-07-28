@@ -54,7 +54,7 @@
 						<li><h4><a href="/about" title="About">About</a></h4></li>
 						<li><h4><a href="/archive" title="Archive">Archive</a></h4></li>
 						<li><h4><a href="/projects" title="Projects">Projects</a></h4></li>
-						<li><h4><a href="http://www.github.com/Martin-Brennan" target="_blank" title="Github">Github</a></h4></li>
+						<li><h4><a class="no_icon" href="http://www.github.com/Martin-Brennan" target="_blank" title="Github">Github</a></h4></li>
 					</ul>
 					<div class="clearfix"></div>
 					<p class="subtitle">I love web development, and I hope you will too!</p>

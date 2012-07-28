@@ -26,3 +26,20 @@
 <?php
 	} 
 ?>
+<?php
+// Show the tags if the comments are allowed in post/page
+add_filter('comments_open','eg_allow_tags_in_comments');
+// For making it sure, we also force the tags again before comment approval
+add_filter('pre_comment_approved','eg_allow_tags_in_comments');
+function eg_allow_tags_in_comments($data) {
+  // This variable is in wp-includes/kses.php file, check it out
+  global $allowedtags;
+
+  // You can add HTML tags and their properties by this way
+  // Don't force too much, there is a reason they are not allowed
+  $allowedtags['pre'] = array('class'=>array());
+
+  // And we return our expanded data for comment approval
+  return $data;
+}
+?>

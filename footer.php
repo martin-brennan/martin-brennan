@@ -2,11 +2,11 @@
 			<div class="twelvecol">
 				<div class="footer">
 					<ul class="footer-nav">
-						<li><a href="/"><h4>Blog</h4></a></li>
-						<li><a href="/about"><h4>About</h4></a></li>
-						<li><a href="/archive"><h4>Archive</h4></a></li>
-						<li><a href="/projects"><h4>Projects</h4></a></li>
-						<li><a href="http://www.github.com/Martin-Brennan"><h4>Github</h4></a></li>
+						<li><a href="/" title="Blog"><h4>Blog</h4></a></li>
+						<li><a href="/about" title="About"><h4>About</h4></a></li>
+						<li><a href="/archive" title="Archive"><h4>Archive</h4></a></li>
+						<li><a href="/projects" title="Projects"><h4>Projects</h4></a></li>
+						<li><a class="no_icon" href="http://www.github.com/Martin-Brennan" target="_blank" title="Github"><h4>Github</h4></a></li>
 					</ul>
 					<div class="clearfix"></div>
 					<p class="subtitle">
