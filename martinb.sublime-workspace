@@ -4,6 +4,122 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size"
+			],
+			[
+				"post",
+				"post-meta"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"rep",
+				"repo_wrap"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"post-me",
+				"post-meta-spaced"
+			],
+			[
+				"head",
+				"header-right"
+			],
+			[
+				"header",
+				"header-left"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"black",
+				"blackgrey"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"norma",
+				"normal-font"
+			],
+			[
+				"code",
+				"code-font"
+			],
+			[
+				"commen",
+				"comment"
+			],
+			[
+				"cod",
+				"code-border"
+			],
+			[
+				"header-",
+				"header-height"
+			],
+			[
+				"code-",
+				"code-border"
+			],
+			[
+				"mi",
+				"midgrey"
+			],
+			[
+				"nor",
+				"normal-font"
+			],
+			[
+				"pr",
+				"proxima"
+			],
+			[
+				"main",
+				"mainblue"
+			],
+			[
+				"com",
+				"comments-structure"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"comment",
+				"comment-meta"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
 				"whit",
 				"white-space:   (property)"
 			],
@@ -28,10 +144,6 @@
 				"first-letter  (pseudo-class)"
 			],
 			[
-				"commen",
-				"comment-author-avatar"
-			],
-			[
 				"background-c",
 				"background-color:   (property)"
 			],
@@ -52,10 +164,6 @@
 				"border	border: size style color"
 			],
 			[
-				"back",
-				"background:   (property)"
-			],
-			[
 				"add",
 				"addClass  (function)"
 			],
@@ -70,10 +178,6 @@
 			[
 				"fon",
 				"font	font: size font"
-			],
-			[
-				"font",
-				"font-family"
 			],
 			[
 				"font-",
@@ -112,43 +216,34 @@
 	"buffers":
 	[
 		{
-			"file": "style.css",
+			"file": "projects.php",
 			"settings":
 			{
-				"buffer_size": 1857,
+				"buffer_size": 2858,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "<p>Recently I&#8217;ve been diving into developing with PHP, to broaden my skills by learning a new language as part of <a href=\"fredboyle.com/codechallenge/\">Fred Boyle&#8217;s code challenge</a>. This also gave me an excuse to mess around with Amazon&#8217;s extensive cloud services, something that I&#8217;ve wanted to try for a while. Specifically Amazon&#8217;s Elastic Compute Cloud, or EC2, a component of <a href=\"http://aws.amazon.com/\">Amazon&#8217;s Web Services</a> which you can use to set up and manage a cloud-based web server instance using Amazon&#8217;s extensive network and computational power.<!--more--></p>\n\n<p>To my surprise, it was more difficult than I expected to manually install and configure all of the individual components that comprise a web server. I put it down to a lack of experience on my part, especially with using SSH to issue commands to the server and setting up PHP and mySQL manually instead of using an excellent tool such as <a href=\"http://www.mamp.info/en/index.html\">MAMP</a>, <a href=\"http://www.wampserver.com/en/\">WAMP</a> or <a href=\"http://www.apachefriends.org/en/xampp.html\">XAMPP</a> to simplify the process.</p>\n\n<p>After a lot of troubleshooting and Googling and stubbornly refusing to let the setup process beat me, I was able to set up everything successfully and have the simple PHP to-do list application that I had developed up and running. </p>\n\n<p>In this guide I&#8217;ll show you how to sign up for Amazon&#8217;s web services, launch and configure an EC2 instance, open the ports required for SSH, web and FTP access to your instance, and go through the ins and outs of setting up PHP, mySQL, SFTP and phpMyAdmin on the instance via SSH.</p>\n\n<p>So, let&#8217;s get into it. The first thing we&#8217;ll be doing is signing up for Amazon Web Services.</p>\n\n<h2 id=\"signingupforaws\">Signing up for AWS</h2>\n\n<p>This is probably the easiest part of the whole process. If you are already have an Amazon account, just go to the <a href=\"aws.amazon.com\">AWS signup page</a> and log in from there using your Amazon credentials. You can also use this page to sign up for an AWS account if you don&#8217;t already have one.</p>\n\n<p>If they aren&#8217;t already stored, Amazon will need you to enter your credit card details and contact details. You won&#8217;t actually be charged for anything until you start using their web services. For the budget conscious, a pricing guide can be found <a href=\"http://aws.amazon.com/ec2/pricing/\">here</a>. Amazon has a free usage tier for EC2, detailed at <a href=\"http://aws.amazon.com/free/\">http://aws.amazon.com/free/</a>, which lets you run a free Micro instance for one year after you sign up, so if you stick to the Micro EC2 instance while you are messing around you shouldn&#8217;t be charged a cent.</p>\n\n<h2 id=\"settingupanec2instance\">Setting up an EC2 Instance</h2>\n\n<p>There are a few steps that need to be completed before you can start installing things and using an EC2 instance to host your site or blog. We need to:</p>\n\n<ul>\n<li>Sign up for an EC2 account</li>\n<li>Set up an EC2 instance</li>\n<li>Create a key pair file for use with SSH</li>\n<li>Create a security group and open any required ports</li>\n<li>Set up an Elastic IP address</li>\n</ul>\n\n<p>All of these tasks are also relatively straightforward. Amazon provides a lot of options when setting up an instance, but for this guide we&#8217;ll mainly be sticking to the default options so we don&#8217;t overcomplicate things.</p>\n\n<h3 id=\"signupforanec2account\">1. Sign up for an EC2 account</h3>\n\n<p>Even after singing up for an AWS account, you will need to complete <strong>another</strong> signup process to be able to use the EC2 service, as well as a few of the other services that they provide. After you have logged in, click on the EC2 tab and begin the signup process from there. </p>\n\n<p>During the signup, you will be asked to provide a phone number in order to prove your identity, which will also be stored in case Amazon ever needs to contact you via phone. Amazon will then place an automated call to this number and you will need to enter the provided code to verify your identity, which I thought was pretty cool. What&#8217;s even cooler is that Amazon places this call to <em>international</em> numbers as well, so don&#8217;t worry if you&#8217;re not living in the United States!</p>\n\n<p>Once the signup process is out of the way, we can finally start getting our hands dirty!</p>\n\n<h3 id=\"setupanec2instance\">2. Set up an EC2 instance</h3>\n\n<p>If you&#8217;re not there already, go back to the EC2 tab and click the Launch Instance button on the dashboard and a new window will pop up. If you are given the option, choose the Classic Wizard to set up your instance. From here, you will be shown a list of Amazon Machine Images, or AMIs, which are basically snapshots of virtual servers which have access to repositories of programs to install.</p>\n\n<p>The easiest way to start an instance is to select one of the AMIs in the Quick Start tab, which is what we&#8217;ll be doing. You can also access community AMIs and buy software components to make your own AMIs, both of which are outside the scope of this guide. Your best bet if you are just starting out is to use one of the AMIs provided by Amazon or Ubuntu, which guarantees reliability and authenticity.</p>\n\n<p>Anyway, go ahead and choose the Amazon Linux AMI, which will most likely be at the top of the list. You can either run a 64-bit or 32-bit instance; choose either one, it doesn&#8217;t really matter for our purposes right now.</p>\n\n<p>On the Instance Details step you can leave the settings as they are, just make that the instance type selected is &#8220;Micro&#8221;. On the next screen just leave the options at their defaults as well, then click continue.</p>\n\n<p>In the next step, you can define 10 tags as key-value pairs that help you identify this instance which will help set it apart from any other instances you may be running. Since we only have one instance, just use the default Name key and give it a value of whatever you want. For this guide I will enter Tutorial as the Name of my instance.</p>\n\n<h4 id=\"createakeypairfileforusewithssh\">Create a key pair file for use with SSH</h4>\n\n<p>Next, you will be asked to create a Key Pair file. <strong>This step is important</strong>, as you will be using the Key file that Amazon creates to securely connect to your EC2 instance via SSH, which is what you&#8217;ll be to install programs and configure your instance. Give your Key Pair a name, I will be calling mine tutorial, and download the file. If you&#8217;re on a Mac, a good place to store the file is in the ~/.ssh directory, which is a hidden folder you&#8217;ll find inside your User folder. If you can&#8217;t see your hidden folders, follow <a href=\"http://www.mactricksandtips.com/2008/04/show-hidden-files.html\">this guide</a>, which shows you how to view hidden folders on a Mac.</p>\n\n<p><em>Note:</em> If you are on Windows you will most likely be using PuTTy for SSH commands. PuTTy uses the extension .ppk for its key files, while Amazon creates a .pem file. You will need to run this .pem file through the PuTTygen tool to use it, which you can download along with PuTTy <a href=\"http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html\">here</a>.</p>\n\n<p>After you have copied your key file to ~/.ssh or the directory that you have chosen to use, you will also need to change the permissions for your key file to make it only readable by you. To do this, open up Terminal and switch to the directory you stored your key file in like so :</p>\n\n<pre><code class=\"bash\">cd ~/.ssh\n</code></pre>\n\n<p>Then, enter the following command :</p>\n\n<pre><code class=\"bash\">chmod 400 name_of_your_key_file.pem\n</code></pre>\n\n<p>If you&#8217;re anything like me you&#8217;ll want to know what this does. Basically, the chmod command is used to permissions for a file. The three digits are permissions for the Owner, Group and World respectively and range in value from 0 to 7, with 0 being no permissions and 7 being full read, write and execute permissions. The command chmod 400 is giving the file&#8217;s Owner, which is you, read permissions, and giving everyone else no permissions at all, which is exactly what we want for our key file. For more information on chmod permission codes, <a href=\"http://www.december.com/unix/ref/chmod.html\">read this</a>.</p>\n\n<h4 id=\"createasecuritygroupandopenanyrequiredports\">Create a security group and open any required ports</h4>\n\n<p>You will then be required to define a security group for your instance to be a part of. Security groups are used to tell the instance which ports to open, which will determine the protocols and traffic that your instance can accept. We&#8217;re going to create a new security group for this example. The first step is to give the group a name and a description.</p>\n\n<p>You can then add inbound rules to your security group. We are going to add port 80 and 8080 for HTTP, 21 and 12000&#8211;12100 for SFTP and 22 for SSH. If you required SMTP, you would also add port 25, and for HTTPS you would add port 443. For each of these ports, all you need to do is create a new rule and select Custom TCP Rule, enter the port number or range, and leave the source as 0.0.0.0/0, which is &#8220;All Internet&#8221;. Once you have added the required access rules, click Continue.</p>\n\n<p>Finally, review your settings here and if you are happy, click the Launch button to launch your instance, which will take a few minutes to launch. You can head back to the Instances section of the EC2 dashboard and watch the status of your instance change in real time, which is pretty neat.</p>\n\n<h3 id=\"settingupanelasticip\">Setting up an Elastic IP</h3>\n\n<p>The last thing we need to do to complete the instance set up is to allocate a new Elastic IP address to our instance. Allocating an Elastic IP lets you point a DNS to the instance, and makes it easier to connect third party programs or apps to your instance, for example those that handle FTP file transfer. Another benefit is that if you have multiple instances running, and your live instance fails, you can simply reallocate your Elastic IP to a different instance and have your site back up and running right away. For more information about Elastic IP&#8217;s, refer to Amazon&#8217;s guide <a href=\"http://aws.amazon.com/articles/1346?_encoding=UTF8&amp;jiveRedirect=1\">here</a>.</p>\n\n<p>To allocate an Elastic IP, go to the EC2 tab and click Elastic IPs on the left hand side menu. Then click on &#8220;Allocate New Address&#8221; and click &#8220;Yes, Allocate&#8221; on the popup that appears. Finally, right click on the IP address and select Associate, select your instance from the menu, then click Yes, Associate. That&#8217;s all you need to do, and with that we are done setting up the EC2 instance.</p>\n\n<p>Now that we&#8217;ve finished getting our hands dirty, we can start getting them absolutely filthy, with a crash course in using SSH to install PHP, mySQL, phpMyAdmin and FTP on our instance.</p>\n\n<h2 id=\"installingandsettingupphpphpmyadminmysqlandftp\">Installing and setting up PHP, phpMyAdmin, mySQL and FTP</h2>\n\n<h3 id=\"connectingviassh\">Connecting via SSH</h3>\n\n<p>Now that we have everything set up, we can connect to the instance via SSH. SSH is, according to our friend <a href=\"http://en.wikipedia.org/wiki/Secure_Shell\">Wikipedia</a>:</p>\n\n<blockquote>\n<p>Secure Shell (SSH) is a network protocol for secure data communication, remote shell services or command execution and other secure network services.</p>\n</blockquote>\n\n<p>SSH is run via a command line program such as Terminal for the Mac, and allows you to send commands to your instance over a secure, encrypted connection. To connect to your instance, go to the Instances section of the EC2 tab and right click on the instance you want to connect to and click connect.</p>\n\n<p>A window will pop up with two options; &#8220;Connect with a standalone SSH Client&#8221; and &#8220;Connect from your browser using the Java SSH Client (Java Required)&#8221;. We are going to connect with a standalone SSH client, Terminal, so choose that option. Because we already set the permissions for our key file using chmod, we can just skip to step 4 of the process. Switch to your .ssh directory in Terminal using the command : </p>\n\n<pre><code class=\"bash\">cd ~/.ssh\n</code></pre>\n\n<p>And then enter the command that Amazon gives you to connect to your instance, which will be something like :</p>\n\n<pre><code class=\"bash\">ssh -i tutorial.pem ec2-user@23.23.229.35\n</code></pre>\n\n<p><em>Note:</em> If you hadn&#8217;t set up an Elastic IP earlier this command would be slightly different, because you would be connecting to the instance&#8217;s public domain instead of its IP address.</p>\n\n<h3 id=\"runningupdatesandanoverviewofsshcommands\">Running updates and an overview of SSH commands</h3>\n\n<p>You should now be connected to your instance! You may be prompted to apply updates; if you are, run the command it tells you to run, which is:</p>\n\n<pre><code class=\"bash\">sudo yum update\n</code></pre>\n\n<p>The instance will ask you whether it is okay to download the files used whenever you install anything or update on your instance. At this point I&#8217;d like to give a brief overview of some of the SSH commands and syntax that we will be using, because they can be confusing if you are unfamiliar with them. You can skip this if you are already familiar with Linux commands.</p>\n\n<p><strong>Commands</strong></p>\n\n<p><strong>sudo</strong> - Adding sudo before any commands allows you to run the command as the Linux root or superuser instead of the ec2 user. We will be using this in front of most commands as the ec2 user doesn&#8217;t have many install or other security privileges.</p>\n\n<p><strong>yum</strong> - Yum is a software installation tool for Red Hat/Fedora Linux, which is what Amazon&#8217;s Linux AMI uses. We will be using yum to install any packages, such as PHP and mySQL, on our server.</p>\n\n<p><strong>vi</strong> - Vi is the visual editor that comes with Unix systems, and it allows you to edit files on the instance using the Terminal window. Vi operates in both a command mode and an insert/edit mode, and I will go over a few of the commands later when we start editing files with it.</p>\n\n<p>Now that we&#8217;re connected, we&#8217;ll set up Apache so we have a web server on which we can run our website.</p>\n\n<h3 id=\"installingandconfiguringapache\">Installing and Configuring Apache</h3>\n\n<p>To install Apache, all you have to do is run the following command, and say yes to any of the prompts:</p>\n\n<pre><code class=\"bash\">sudo yum install httpd\n</code></pre>\n\n<p>After Apache has been installed, we will need to make some changes to the httpd.conf file, which contains all of the settings for the server. To do this, we will need to use the vi editor that I mentioned earlier. Here are some of the basic commands that we will be using with the vi editor:</p>\n\n<h4 id=\"vieditorcommands\">VI Editor Commands</h4>\n\n<p><strong>i</strong> - Enter insert mode. This will allow you to edit the contents of the file.</p>\n\n<p><strong>Esc</strong> - Enter command mode. This will allow you to run commands on the vi editor, such as saving and quitting.</p>\n\n<p><strong>While in command mode</strong></p>\n\n<p><strong>:q!</strong> - Quit the editor without saving changes.</p>\n\n<p><strong>:wq</strong> - Save changes and quit the editor.</p>\n\n<p><strong>G</strong> - Hold down shift and press g to move the cursor to the last line of the open file.</p>\n\n<p>You can find a larger list of commands to use <a href=\"http://www.cs.colostate.edu/helpdocs/vi.html\">here</a>.</p>\n\n<p>Open the httpd.config file in the editor by entering the following command:</p>\n\n<pre><code class=\"bash\">sudo vi /etc/httpd/conf/httpd.conf\n</code></pre>\n\n<p>All we need to change in here is setting up a Virtual Host for port 80 on the server. Virtual Hosts allow you to run multiple websites on the same server, which can be IP address based or name based. Go all the way to the bottom of the httpd.config file, which you can do by pressing G while in command mode, and uncomment the <code>&lt;VirtualHost **:80&gt;</code> section, <code>DocumentRoot</code> and <code>ServerName</code>. Leave <code>ServerAdmin</code>, <code>ErrorLog</code> and <code>CustomLog</code> commented out though, we don&#8217;t need them for now.</p>\n\n<p>Change the DocumentRoot to <code>/var/www/html/</code>, which is the default directory for web files on an Apache server, then change the server name to the public domain name of your instance, which will be similar to <code>ec2-23-23-229-35.compute-1.amazonaws.com</code>. The last change we need to make is to the DirectoryIndex, which is the file that Apache serves when the root directory of the server is requested. This section is located toward the middle of the file. Change the line to:</p>\n\n<pre><code class=\"bash\">DirectoryIndex index.html index.php index.sh default.jsp\n</code></pre>\n\n<p>This will allow you to have a PHP file as the DirectoryIndex file. The file name does not need to be index.*, this is usually just the default file name that most websites use. After you have changed everything, press Esc to enter command mode and type <code>:wq</code> to save and exit. Finally, start the Apache server using the command:</p>\n\n<pre><code class=\"bash\">sudo service httpd start\n</code></pre>\n\n<p>You can now navigate to your server in your browser using either the IP address or the public DNS. If all goes well, you should see the Apache start page.</p>\n\n<h3 id=\"installingphpmysqlandphpmyadmin\">Installing PHP, mySQL and phpMyAdmin</h3>\n\n<h4 id=\"phpmysql\">PHP &amp; mySQL</h4>\n\n<p>We are getting to the tail end of this guide now, so hang in there! If you don&#8217;t have any need for PHP or mySQL, you can just skip this whole section. To install everything you need for PHP, just run this command:</p>\n\n<pre><code class=\"bash\">sudo yum install php-mysql php php-xml php-mcrypt php-mbstring php-cli mysql\n</code></pre>\n\n<p>Which installs PHP and all of the extensions required for it. Just say yes to all of the prompts that appear. Next, we will install mySQL. Install and run the mySQL server with these commands, and say yes to all of the prompts:</p>\n\n<pre><code class=\"bash\">sudo yum install mysql-server\nsudo /etc/init.d/mysqld start\n</code></pre>\n\n<p>Then set the password for the root user to something secure:</p>\n\n<pre><code class=\"bash\">mysqladmin -u root password '[PASSWORD]'\n</code></pre>\n\n<h4 id=\"phpmyadmin\">phpMyAdmin</h4>\n\n<p>mySQL is now installed and running, and we can now go a step further and install and configure phpMyAdmin. phpMyAdmin is a web based interface for administering mySQL, including managing users and setting permissions, creating databases and queries, and handling other similar database administration tasks. The process of installing phpMyAdmin takes the most steps in this guide.</p>\n\n<p>First, change directory to the Apache root folder:</p>\n\n<pre><code class=\"bash\">cd /var/www/html\n</code></pre>\n\n<p>Then, download phpMyAdmin to this folder:</p>\n\n<pre><code class=\"bash\">sudo wget http://sourceforge.net/projects/phpmyadmin/files/phpMyAdmin/3.3.9.1/phpMyAdmin-3.3.9.1-all-languages.tar.gz\n</code></pre>\n\n<p>Next, extract the files to the root of the folder:</p>\n\n<pre><code class=\"bash\">tar -xzvf phpMyAdmin-3.3.9.1-all-languages.tar.gz -C /var/www/html\n</code></pre>\n\n<p>Rename the folder to phpmyadmin and remove the zip file:</p>\n\n<pre><code class=\"bash\">sudo mv phpMyAdmin-3.3.9.1-all-languages phpmyadmin\nsudo rm -rf phpMyAdmin-3.3.9.1-all-languages.tar.gz\n</code></pre>\n\n<p>Create a Unix user for phpmyadmin and give it permission/ownership over the phpmyadmin folder.</p>\n\n<pre><code class=\"bash\">sudo adduser phpmyadmin\nsudo passwd phpmyadmin (After this you will be prompted to enter a password)\n</code></pre>\n\n<p>Give the user permission/ownership over the phpmyadmin folder, first by finding which user Apache uses by running:</p>\n\n<pre><code class=\"bash\">egrep 'User|Group' /etc/httpd/conf/httpd.conf\n</code></pre>\n\n<p>And then, after finding this user, by changing to the root Apache directory and running the chown command on the phpmyadmin folder.</p>\n\n<pre><code class=\"bash\">cd /var/www/html\nsudo chown phpmyadmin.apache phpmyadmin/\n</code></pre>\n\n<p>Then, run this set of commands:</p>\n\n<pre><code class=\"bash\">cd /var/www/html/phpmyadmin/\nsudo mkdir config\nsudo chmod o+rw config\nsudo cp config.sample.inc.php config/config.inc.php\nsudo chmod o+w config/config.inc.php\nsudo serivce httpd restart\n</code></pre>\n\n<p>This changes your directory to the phpmyadmin folder, makes a config directory and sets permissions for it, copies a sample config file for phpmyadmin to the config directory and renames it then adds permissions to the config.inc.php file. Finally, the Apache server is restarted.</p>\n\n<p>Now we need to run the phpMyAdmin setup. Navigate to <code>http://[your_instance_IP]/phpmyadmin/setup/index.php</code> and click New Server. All you need to change on the next screen is the PHP extension to use to mysqli if it is not already selected, and then enter the config auth user, which will be root, and config auth password, which is the password we entered earlier for the root mySQL user. Click save and you will be done. Don&#8217;t worry about the errors that appear after the setup, we will be fixing them up next.</p>\n\n<p>You can now navigate to http://[your_instance_IP]/phpmyadmin/index.php and log in using the root user credentials. We will now handle the errors shown. One should be something along the lines of &#8220;The configuration file now needs a secret passphrase (blowfish_secret).&#8221;, and the other should be telling you to delete the config folder in the phpmyadmin directory. There will also be another error saying something along the lines of “The additional features for working with linked tables have been deactivated. To find out why click here.”, but don&#8217;t worry about that for now. We&#8217;ll fix the first error, and set up some other things in the config file, before deleting the config folder.</p>\n\n<p>Open the config file, config.inc.php, by running this command:</p>\n\n<pre><code class=\"bash\">sudo vi /var/www/html/phpmyadmin/config/config.inc.php\n</code></pre>\n\n<p>Near the top of the file you will see this line:</p>\n\n<pre><code class=\"bash\">$cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */\n</code></pre>\n\n<p>All you need to do here is enter a random string of characters between the quotation marks. Scroll down to the /* Server Parameters */ section, and change</p>\n\n<pre><code class=\"bash\">$cfg['Servers'][$i]['extension'] = 'mysql';\n</code></pre>\n\n<p>to</p>\n\n<pre><code class=\"bash\">$cfg['Servers'][$i]['extension'] = 'mysqli';\n</code></pre>\n\n<p>Scroll down a bit further and you will find the /* User for advanced features */ section. Leave the control user and the control password commented out, as we will not need them, and uncomment all of the other lines starting with $cfg in this section and the two below it. Save your changes by pressing Esc and entering :wp. Change directory back to the phpmyadmin config folder.</p>\n\n<pre><code class=\"bash\">cd /var/www/html/phpmyadmin/config\n</code></pre>\n\n<p>We are now going to copy the config.inc.php file out of the config folder and into the root directory so phpMyAdmin can use it, switch back to the root directory, and delete the config folder so that error is resolved. Run the following commands to achieve this:</p>\n\n<pre><code class=\"bash\">sudo cp config.inc.php ..\ncd ..\nsudo rm -rf config/\n</code></pre>\n\n<p>We are almost done with installing phpMyAdmin! We just need to complete a couple more steps to ensure the installation is successful and all of the components are correctly configured, and to get rid of the final setup error.</p>\n\n<p>First, log into phpMyAdmin and go into the Privileges tab, and select &#8216;Add a new user&#8217;. Enter phpmyadmin as the user name, change the Host to Local, then enter a password for the user. Select &#8220;Create database with same name and grant all privileges&#8221;, then click Check All in the Global Privileges section, then click Go and the database and user will be created.</p>\n\n<p>Finally, and I promise this will be the last step in setting up phpmyadmin, we need to download a script called create_tables.sql and run it. This script will create the linked tables required in the phpmyadmin database we just created. To download it via SSH, first navigate to your ~/.ssh folder, then enter the following command to download the .sql file from the server to your downloads directory:</p>\n\n<pre><code class=\"bash\">scp -i tutorial.pem ec2-user@23.23.229.35:/var/www/html/phpmyadmin/scripts/create_tables.sql ~/Downloads\n</code></pre>\n\n<p>The scp command is used to download a file over SSH. The structure is as follows:</p>\n\n<pre><code class=\"bash\">scp -i your_keyfile.pem ec2-user@your_instance_IP:/file/location/on/instance /file/download/local\n</code></pre>\n\n<p>After you have downloaded the file, log back in to phpMyAdmin if you aren&#8217;t already logged in and go to the import tab. Select the create_tables.sql file from your Downloads directory and click Go. The script will be run and the tables will be created. If the error does not disappear, log out of phpMyAdmin and log back in and it should disappear.</p>\n\n<p>And we&#8217;re done! Phew! The <em>very</em> last thing that we need to do is set up SFTP on our server so we can transfer files between our server and our local machine easily without having to use SSH. Read on!</p>\n\n<h3 id=\"settingupsftp\">Setting up SFTP</h3>\n\n<p>First of all we need to install the SFTP server, <code>vsftpd</code>, on our instance. Run the following command to install it:</p>\n\n<pre><code class=\"bash\">sudo yum install vsftpd\n</code></pre>\n\n<p>Now we will need to edit the configuration file for the SFTP server. Open the <code>vsftpd.conf</code> file in the text editor:</p>\n\n<pre><code class=\"bash\">sudo vi /etc/vsftpd/vsftpd.conf\n</code></pre>\n\n<p>In here we will be changing a few properties to make the SFTP server more secure. Change the properties listed to the values shown.</p>\n\n<pre><code class=\"bash\">anonymous_login=NO\nlocal_enable=YES\nwrite_enable=YES\nconnect_from_port_20=NO\nchroot_local_users=YES (you may need to uncomment this)\nlocal_umask=022\n</code></pre>\n\n<p>There is also some lines that we will need to add to this configuration file to allow passive connections to the FTP server using the ports that we defined earlier in the security group for the instance (12000&#8211;12100). Add these lines to the bottom of your config file, then save and exit using <code>:wq</code>.</p>\n\n<pre><code class=\"bash\">pasv_enable=YES\npasv_address=your_instance_IP\npasv_min_port=12000\npasv_max_port=12100\nport_enable=YES\n</code></pre>\n\n<p>Now we will be securing the FTP upload directory to the ec2-user, so only they can read/write to the directory. First we will set the ec2-user to the owner of that directory and set the correct read/write permissions for that directory:</p>\n\n<pre><code class=\"bash\">sudo chown -R ec2-user /var/www/html\nsudo chmod 775 /var/www/html\n</code></pre>\n\n<p>After that, we will need to create a .userlist file and add the ec2-user to it, which will be used in vsftpd.conf as a list of users to give access to the FTP directory:</p>\n\n<pre><code class=\"bash\">sudo vi /etc/vsftpd/vsftpd.userlist\n</code></pre>\n\n<p>Once in edit mode for the file, add the <code>ec2-user</code> user to it, save and quit. Finally, open the vsftpd.conf file again using <code>sudo vi /etc/vsftpd/vsftpd.conf</code> and add the following lines:</p>\n\n<pre><code class=\"bash\">userlist_file=/etc/vsftpd.userlist\nuserlist_enable=YES\nuserlist_deny=NO\n</code></pre>\n\n<p>Finally, you need to add nologin to the shell set to connect. Open <code>sudo vi /etc/shells</code>, which should look something like:</p>\n\n<pre><code class=\"bash\">/bin/ksh\n/usr/bin/rc\n/usr/bin/tcsh\n/bin/tcsh\n/usr/bin/esh\n/bin/dash\n/bin/bash\n/bin/rbash\n</code></pre>\n\n<p>Add the line <code>/usr/sbin/nologin</code> to the end of the file. To finish off, create a usergroup and add the ec2-user to it, then start up the vsftpd service:</p>\n\n<pre><code class=\"bash\">sudo groupadd ftpusers\nsudo usermod -Gftpusers ec2-user\nsudo service vsftpd start\n</code></pre>\n\n<p>You will now be able to connect to your instance and upload/download files using SFTP in your preferred file transfer application.</p>\n\n<h2 id=\"conclusionfurtherreading\">Conclusion &amp; Further Reading</h2>\n\n<p>After all of that, you should now have an Amazon EC2 instance humming along quite nicely with the basic components installed that are required for PHP and mySQL web applications. You should now know how to:</p>\n\n<ul>\n<li>Create an Amazon EC2 instance</li>\n<li>Manage Security Groups for your instance</li>\n<li>Create and associate Elastic IP addresses</li>\n<li>Connect to your server and issue commands via SSH</li>\n<li>Install and configure PHP, phpMyAdmin, mySQL and SFTP on your server</li>\n</ul>\n\n<p>Now that you have your server up and running, the fun really starts! You can start uploading your websites via your preferred SFTP application or program, create mySQL databases and upload a web app, or you can set up more features on your instance such as support for a Wordpress blog. </p>\n\n<p>When installing and running things on your instance, you may want to keep in mind the resources available to the Micro instance if you are hosting large or high traffic websites, because of the relatively small amount of RAM allocated to the instance and the low I/O performance. For more information on instance tier hardware specifications, <a href=\"http://aws.amazon.com/ec2/instance-types/\">read this page</a>.</p>\n\n<p>I do recommend that before you use the instance for production purposes that you do some further reading and experimentation first. Amazon&#8217;s web services are powerful, but you must use the power wisely, and make an informed decision about whether Amazon&#8217;s web services are the best tools for the job that you need to do. Below is some further reading that you might like to peruse.</p>\n\n<h3 id=\"furtherreading\">Further Reading</h3>\n\n<p><a href=\"http://aws.amazon.com/articles/1233\">Tips for Securing Your EC2 Instance</a> - Some tips from Amazon about securing your instance to avoid security vulnerabilities.</p>\n\n<p><a href=\"http://www.evanconkle.com/2011/11/remotely-connect-ec2-server-coda-ftp/\">Remotely Connect to Your EC2 Server Using Coda FTP</a> - I use Coda primarily for development, and this handy guide tells you how to connect to your instance using key files and Coda&#8217;s FTP functionality.</p>\n\n<p><a href=\"http://coenraets.org/blog/2012/01/setting-up-wordpress-on-amazon-ec2-in-5-minutes/\">Setting Up Wordpress on Amazon EC2 in 5 Minutes</a> - You could probably skip to step 7 on this one, it tells you how to download, install and set up the latest Wordpress installation on your instance.</p>\n\n<p><a href=\"http://onlinewebapplication.com/2011/09/amazon-ec2-cloud-installation-setup.html\">Amazon EC2 Cloud Installation and Setup</a> - This article covers many of the same steps as my article, but using Windows instead of Mac. It covers using PuTTY for SSH and Filezilla for SFTP.</p>",
+			"file": "sass/screen.sass",
 			"settings":
 			{
-				"buffer_size": 31467,
-				"line_ending": "Unix",
-				"name": "<p>Recently I&#8217;ve been diving into developing"
-			}
-		},
-		{
-			"file": "sidebar.php",
-			"settings":
-			{
-				"buffer_size": 66,
+				"buffer_size": 7079,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "index.php",
+			"file": "css/1140/1140.css",
 			"settings":
 			{
-				"buffer_size": 1573,
+				"buffer_size": 3535,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "footer.php",
+			"file": "about.php",
 			"settings":
 			{
-				"buffer_size": 156,
+				"buffer_size": 562,
 				"line_ending": "Unix"
 			}
 		},
@@ -156,23 +251,7 @@
 			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 1323,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "single.php",
-			"settings":
-			{
-				"buffer_size": 993,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "highlight/styles/github.css",
-			"settings":
-			{
-				"buffer_size": 1784,
+				"buffer_size": 3129,
 				"line_ending": "Unix"
 			}
 		},
@@ -180,7 +259,47 @@
 			"file": "comments.php",
 			"settings":
 			{
-				"buffer_size": 669,
+				"buffer_size": 3877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sidebar.php",
+			"settings":
+			{
+				"buffer_size": 1023,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "searchform.php",
+			"settings":
+			{
+				"buffer_size": 364,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "single.php",
+			"settings":
+			{
+				"buffer_size": 1846,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.rb",
+			"settings":
+			{
+				"buffer_size": 574,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "archive.php",
+			"settings":
+			{
+				"buffer_size": 1598,
 				"line_ending": "Unix"
 			}
 		},
@@ -188,7 +307,15 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 1060,
+				"buffer_size": 1747,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 764,
 				"line_ending": "Unix"
 			}
 		}
@@ -196,9 +323,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 127.0,
+		"height": 207.0,
 		"selected_items":
 		[
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
 			[
 				"tabs",
 				"Indentation: Convert to Tabs"
@@ -273,6 +404,26 @@
 	},
 	"file_history":
 	[
+		"/Users/Martin/Library/KeyBindings/DefaultKeyBinding.dict",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/searchform.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/comments.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/archive.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/single.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/js/mb.js",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/sass/screen.sass",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/header.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/footer.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/about.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/img/projects/byblos.png",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/functions.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/stylesheets/screen.css",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/js/1140/css3-mediaqueries.js",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/css/1140/1140.css",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/sidebar.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/config.rb",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/style.css",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/index.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/highlight/styles/github.css",
 		"/Users/Martin/Dropbox/Development/themes/martin-brennan/style.css",
 		"/Users/Martin/Dropbox/Development/repos/documentr/,gitignore",
 		"/Applications/MAMP/localhost-root/cocktails/wp-content/themes/cocktails/gallery.php",
@@ -341,6 +492,45 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"border-r",
+			"extend",
+			"@",
+			"border-r",
+			"border-",
+			"border-radius: ",
+			"border",
+			"<h4>",
+			"input",
+			"img",
+			"martin",
+			"submit",
+			"hidden",
+			"post-meta",
+			"header",
+			"<h4><a",
+			"</a></h4>",
+			"header",
+			"proxima",
+			".comment",
+			"subti",
+			"p.su",
+			"p.com",
+			"comment",
+			"body",
+			"code",
+			"<strong>",
+			"</strong>",
+			"</a>",
+			"ul",
+			"topbar",
+			"sidebar",
+			"p",
+			"P",
+			"p",
+			"pre",
+			"franklin-gothic-urw",
+			"kepler-std",
+			"rooney-web",
 			"li",
 			"white",
 			"ghost",
@@ -376,6 +566,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"@include border-radius(",
 			"<pre><code class=\"bash\">",
 			"$config[\"database\"]",
 			"$config[\"password\"]",
@@ -391,81 +582,83 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "style.css",
+					"file": "projects.php",
 					"settings":
 					{
-						"buffer_size": 1857,
+						"buffer_size": 2858,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1099,
-								1099
+								2674,
+								2674
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 888.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "sass/screen.sass",
 					"settings":
 					{
-						"buffer_size": 31467,
+						"buffer_size": 7079,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								31467
+								1503,
+								1476
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<p>Recently I&#8217;ve been diving into developing",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1343.0,
+						"translation.y": 711.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "sidebar.php",
+					"file": "css/1140/1140.css",
 					"settings":
 					{
-						"buffer_size": 66,
+						"buffer_size": 3535,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								28,
-								28
+								3535,
+								1769
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -475,18 +668,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "index.php",
+					"file": "about.php",
 					"settings":
 					{
-						"buffer_size": 1573,
+						"buffer_size": 562,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1098,
-								128
+								5,
+								5
 							]
 						],
 						"settings":
@@ -502,18 +695,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "footer.php",
+					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 156,
+						"buffer_size": 3129,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								2968,
+								2578
 							]
 						],
 						"settings":
@@ -522,31 +715,32 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 112.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "header.php",
+					"file": "comments.php",
 					"settings":
 					{
-						"buffer_size": 1323,
+						"buffer_size": 3877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								852,
-								852
+								289,
+								289
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -556,18 +750,18 @@
 				},
 				{
 					"buffer": 6,
-					"file": "single.php",
+					"file": "sidebar.php",
 					"settings":
 					{
-						"buffer_size": 993,
+						"buffer_size": 1023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								852,
-								852
+								773,
+								773
 							]
 						],
 						"settings":
@@ -583,27 +777,25 @@
 				},
 				{
 					"buffer": 7,
-					"file": "highlight/styles/github.css",
+					"file": "searchform.php",
 					"settings":
 					{
-						"buffer_size": 1784,
+						"buffer_size": 364,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								257,
-								257
+								341,
+								341
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 0.0,
+						"translation.x": 52.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -611,23 +803,24 @@
 				},
 				{
 					"buffer": 8,
-					"file": "comments.php",
+					"file": "single.php",
 					"settings":
 					{
-						"buffer_size": 669,
+						"buffer_size": 1846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								400,
-								400
+								664,
+								664
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -637,18 +830,98 @@
 				},
 				{
 					"buffer": 9,
-					"file": "functions.php",
+					"file": "config.rb",
 					"settings":
 					{
-						"buffer_size": 1060,
+						"buffer_size": 574,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								901,
-								901
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "archive.php",
+					"settings":
+					{
+						"buffer_size": 1598,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								282,
+								282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 1747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1546,
+								1546
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "footer.php",
+					"settings":
+					{
+						"buffer_size": 764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								492,
+								492
 							]
 						],
 						"settings":
