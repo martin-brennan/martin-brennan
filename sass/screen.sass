@@ -63,11 +63,14 @@ html, body
 			a > span
 				padding-right: 1em !important
 
-img.aligncenter
-	display: block
-	margin: 0 auto
-	border: 3px solid $blackgrey
-	@include border-radius(5px)
+img
+	&.aligncenter
+		display: block
+		margin: 0 auto
+	&.aligncenter-border
+		@extend img.aligncenter
+		border: 3px solid $blackgrey
+		@include border-radius(5px)
 
 /* Font styles */
 
