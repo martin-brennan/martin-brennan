@@ -11,6 +11,7 @@
 /* Colour Variables */
 $background: #f3f3f3
 $mainblue: #3f61b7
+$mainblue-des: #A1ABC4
 $blackgrey: #222
 $midgrey: #333
 $lightgrey: #666
@@ -130,10 +131,10 @@ p
 			vertical-align: middle
 
 
-blockquote
+blockquote, blockquote p
 	margin-left: 40px
-	border-left: 5px solid #666
-	color: $lightgrey
+	border-left: 5px solid shade($mainblue-des, 30)
+	color: shade($mainblue-des, 30)
 	padding: 0 0 0 15px
 
 pre
@@ -152,6 +153,10 @@ pre
 ul
 	margin: 0 0 0 50px
 	list-style-type: disc
+
+ol
+	margin: 0 0 0 50px
+	list-style-type: decimal
 
 li
 	+normal-font($midgrey)
