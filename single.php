@@ -16,7 +16,7 @@
 						<p><?php edit_post_link('Edit Post'); ?></p>
 						<!-- Post comments -->
 						<p><?php comments_template(); ?></p>
-						<p class="post-meta-spaced">You can use <a href="http://daringfireball.net/projects/markdown/syntax" title="Markdown Syntax Guide">Markdown</a> syntax in your comments, and you should because it's great! You can also use HTML. Allowed tags are: <code>&lt;a&gt;, &lt;blockquote&gt;, &lt;p&gt;, &lt;abbr&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;pre&gt;, &lt;code&gt;</code>.</p>
+						<p class="post-meta-spaced">You can use HTML. Allowed tags are: <code>&lt;a&gt;, &lt;blockquote&gt;, &lt;p&gt;, &lt;abbr&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;pre&gt;, &lt;code&gt;</code>.</p>
 						<p class="post-meta-spaced">When using HTML, multiline code blocks can be made using <code>&lt;pre&gt;&lt;code&gt;[your code here]&lt;/code&gt;&lt;/pre&gt;</code>.</p>
 						<p class="post-meta-spaced">You can optionally add the language as the pre class name. <code>&lt;pre class="[language]"&gt;</code></p>
 					<?php endwhile; ?>
