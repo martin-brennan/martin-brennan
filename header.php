@@ -57,7 +57,7 @@
 						<li><h4><a class="no_icon" href="http://www.github.com/Martin-Brennan" target="_blank" title="Github">Github</a></h4></li>
 					</ul>
 					<div class="clearfix"></div>
-					<p class="subtitle">I love web development, and I hope you will too!</p>
+					<p class="subtitle"><?php bloginfo('description') ?></p>
 				</div>
 			</div>
 		</div>
