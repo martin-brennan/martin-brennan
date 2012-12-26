@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title><?php bloginfo('name'); ?></title>
-		
+	<head>	
 		<!-- Import stylesheets -->
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/1140/1140.css" />
 		<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/css/1140/ie.css" />
