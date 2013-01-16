@@ -1,0 +1,807 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"d:b	display:block"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"noteHover",
+				"noteHoverActive"
+			],
+			[
+				"note",
+				"noteHoverInactive"
+			],
+			[
+				"gra",
+				"gravUrl"
+			],
+			[
+				"emailHa",
+				"emailHash"
+			],
+			[
+				"n",
+				"notelist"
+			],
+			[
+				"noe",
+				"note-list-main"
+			],
+			[
+				"curre",
+				"current_user"
+			],
+			[
+				"oa",
+				"oath_expires_at"
+			],
+			[
+				"create",
+				"created_at"
+			],
+			[
+				"order",
+				"order_by"
+			],
+			[
+				"orde",
+				"order_by"
+			],
+			[
+				"cla",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"opti",
+				"opt_limit"
+			],
+			[
+				"op",
+				"opacityMultipler"
+			],
+			[
+				"opa",
+				"opacityBegin"
+			],
+			[
+				"list-s",
+				"list-style-position"
+			],
+			[
+				"tem",
+				"template"
+			],
+			[
+				"header",
+				"header-nav"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"main",
+				"main-font"
+			],
+			[
+				"post",
+				"post-meta"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"rep",
+				"repo_wrap"
+			],
+			[
+				"post-me",
+				"post-meta-spaced"
+			],
+			[
+				"head",
+				"header-right"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"black",
+				"blackgrey"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"norma",
+				"normal-font"
+			],
+			[
+				"code",
+				"code-font"
+			],
+			[
+				"commen",
+				"comment"
+			],
+			[
+				"cod",
+				"code-border"
+			],
+			[
+				"header-",
+				"header-height"
+			],
+			[
+				"code-",
+				"code-border"
+			],
+			[
+				"mi",
+				"midgrey"
+			],
+			[
+				"nor",
+				"normal-font"
+			],
+			[
+				"pr",
+				"proxima"
+			],
+			[
+				"com",
+				"comments-structure"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"comment",
+				"comment-meta"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"whit",
+				"white-space:   (property)"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"Jur",
+				"JuraItalic"
+			],
+			[
+				"Jr",
+				"JuraBold"
+			],
+			[
+				"Ost",
+				"OstrichSansBold"
+			],
+			[
+				"first-",
+				"first-letter  (pseudo-class)"
+			],
+			[
+				"background-c",
+				"background-color:   (property)"
+			],
+			[
+				"tr",
+				"textarea  (element)"
+			],
+			[
+				"Jura",
+				"JuraRegular"
+			],
+			[
+				"border",
+				"border	border: size style color"
+			],
+			[
+				"add",
+				"addClass  (function)"
+			],
+			[
+				"link",
+				"link-blue-light"
+			],
+			[
+				"OstrichSan",
+				"OstrichSansBlack"
+			],
+			[
+				"fon",
+				"font	font: size font"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"nav",
+				"navy-blue"
+			],
+			[
+				"backg",
+				"background	background-color: hex"
+			],
+			[
+				"read",
+				"ready	document ready (safe)"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"ready",
+				"ready	document ready - jQuery"
+			],
+			[
+				"re",
+				"ready	document ready - jQuery"
+			],
+			[
+				"jquery",
+				"jquery	<script> (jQuery google ajax api)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 227.0,
+		"selected_items":
+		[
+			[
+				"syntax:j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax:ra",
+				"Set Syntax: Ruby on Rails"
+			],
+			[
+				"ever",
+				"Search: Everything"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"package cont",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Snippet: html"
+			],
+			[
+				"jquery",
+				"Snippet: Instert script tag with latest jQuery source."
+			],
+			[
+				"snippet docum",
+				"Snippet: document ready - jQuery"
+			],
+			[
+				"Snippet: ",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"s",
+				"Sort Lines"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/view/notes.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/notes/_main_note_list.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/stylesheets/notes.css.scss",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/application.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/vendor/assets/stylesheets/vendor-specific.scss",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/stylesheets/application.css.scss",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/controller/notes.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/model/notes.js",
+		"/Users/workspace/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/vendor/assets/javascripts/jquery.sortable.min.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/controllers/application_controller.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/base/notes.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/initialize.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/layouts/application.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/page/notes.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/layouts/notes.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/home/index.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/stylesheets/bootstrap_and_overrides.css.scss",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/controllers/notes_controller.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/notes/index.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/global.js.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/models/user.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/Guardfile",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/spec/spec_helper.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/initializers/omniauth.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/routes.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/controllers/sessions_controller.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/images/fb-signin.png",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/spec/requests/notes_spec.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/spec/requests/indices_spec.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/javascripts/notes.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/Gemfile",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/application.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/environments/development.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/environments/test.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/models/note.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/notes/_add_note_inline.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/environment.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/controllers/home_controller.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/controllers/sessions_controller",
+		"/Users/workspace/.rvm/log/ruby-1.9.3-p327/install.log",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config/environments/production.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/notes/_note_list_opt.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/notes/notes_opt.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/lib/util/tools.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/config.ru",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/lib/app.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/views/notes/limit.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/spec/controllers/notes_controller_spec.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/assets/stylesheets/home.css.scss",
+		"/Users/workspace/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/spec/helpers/notes_helper_spec.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/helpers/notes_helper.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/app/helpers/application_helper.rb",
+		"/Users/workspace/Dropbox/Development/˜/.bash_profile",
+		"/Users/workspace/.bash_profile",
+		"/Users/workspace/.profile",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/README.md",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/Gemfile",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/config/application.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/test/test_helper.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/views/layouts/application.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/views/home/index.html.erb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/helpers/application_helper.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/controllers/application_controller.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/helpers/home_helper.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/config/routes.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/config/environment.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/config/boot.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/config/database.yml",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/controllers/home_controller.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/assets/javascripts/application.js",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/assets/stylesheets/bootstrap_and_overrides.css.scss",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/app/assets/stylesheets/home.css.scss",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/config/initializers/session_store.rb",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/Rakefile",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create/Gemfile.lock",
+		"/Users/workspace/Dropbox/Development/ror/dont-forget/.gitignore",
+		"/Library/Ruby/Gems/1.8/gems/pg-0.14.1/ext/gem_make.out",
+		"/Users/workspace/.rvm/log/rubygems.install.log",
+		"/Users/workspace/Dropbox/Sandbox/jsmodule/js/require.js",
+		"/Users/workspace/Dropbox/Sandbox/jsmodule/js/init.js",
+		"/Users/workspace/Dropbox/Sandbox/jsmodule/js/helpers/util.js",
+		"/Users/workspace/Dropbox/Sandbox/jsmodule/js/data/test.json",
+		"/Users/workspace/Dropbox/Sandbox/jsmodule/index.html",
+		"/Users/workspace/Dropbox/Sandbox/jsmodule/js/data/calendar.js",
+		"/Users/workspace/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/comments.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/single.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/comments.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/index.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/sidebar.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/style.css",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/header.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/single.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.wolasblog.com/wp-content/themes/wolas/footer.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.reallifeinreallight.com/wp-content/themes/reallife/functions.php",
+		"/Users/workspace/Dropbox/Development/vhost/dev.reallifeinreallight.com/wp-content/themes/reallife/css/skeleton/skeleton-2",
+		"/Users/workspace/Downloads/eureka.gitignore",
+		"/Users/workspace/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/header.php",
+		"/Users/Martin/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/projects.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/sass/screen.sass",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/css/1140/1140.css",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/about.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/header.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/comments.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/sidebar.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/searchform.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/single.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/config.rb",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/archive.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/functions.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/footer.php",
+		"/Users/Martin/Library/KeyBindings/DefaultKeyBinding.dict",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/js/mb.js",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/img/projects/byblos.png",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/stylesheets/screen.css",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/js/1140/css3-mediaqueries.js",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/style.css",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/index.php",
+		"/Users/Martin/Dropbox/Development/vhost/dev.martin-brennan.com/wp-content/themes/martin-brennan/highlight/styles/github.css",
+		"/Users/Martin/Dropbox/Development/themes/martin-brennan/style.css",
+		"/Users/Martin/Dropbox/Development/repos/documentr/,gitignore",
+		"/Applications/MAMP/localhost-root/cocktails/wp-content/themes/cocktails/gallery.php",
+		"/Applications/MAMP/localhost-root/cocktails/wp-content/themes/cocktails/index.php",
+		"/Applications/MAMP/localhost-root/cocktails/wp-content/themes/cocktails/page.php",
+		"/Applications/MAMP/localhost-root/cocktails/wp-content/themes/cocktails/single.php",
+		"/Applications/MAMP/localhost-root/cocktails/wp-content/themes/cocktails/sidebar.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/workspace/Dropbox/Development/ror/dont-forget/dont-create",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"TestHelpers",
+			"getNotes",
+			"test",
+			"test_",
+			"DontCopy",
+			"ul",
+			"header-n",
+			"1.1e\n\n\n\n1.1\n1.1",
+			"P ",
+			"search",
+			"Description",
+			"search",
+			"'",
+			"list",
+			"code",
+			"border-r",
+			"extend",
+			"@",
+			"border-r",
+			"border-",
+			"border-radius: ",
+			"border",
+			"<h4>",
+			"input",
+			"img",
+			"martin",
+			"submit",
+			"hidden",
+			"post-meta",
+			"header",
+			"<h4><a",
+			"</a></h4>",
+			"header",
+			"proxima",
+			".comment",
+			"subti",
+			"p.su",
+			"p.com",
+			"comment",
+			"body",
+			"code",
+			"<strong>",
+			"</strong>",
+			"</a>",
+			"ul",
+			"topbar",
+			"sidebar",
+			"p",
+			"P",
+			"p",
+			"pre",
+			"franklin-gothic-urw",
+			"kepler-std",
+			"rooney-web",
+			"li",
+			"white",
+			"ghost",
+			"ghos",
+			"<pre><code>",
+			"YOURUSERNAME",
+			"404",
+			"submit",
+			"button",
+			"fonts.css",
+			"side",
+			"(); ?>",
+			"\">",
+			"( '",
+			"comments_number",
+			"\" /><?",
+			">",
+			";",
+			"left",
+			"options",
+			"			                }",
+			"options",
+			"foreach",
+			";",
+			"$config(\"database\")",
+			"$config(\"password\")",
+			"$config(\"username\")",
+			"$config(\"server\")"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"get_notes",
+			"@include border-radius(",
+			"<pre><code class=\"bash\">",
+			"$config[\"database\"]",
+			"$config[\"password\"]",
+			"$config[\"username\"]",
+			"$config[\"server\"]"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"applica",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"applc",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"notes.js",
+				"app/assets/javascripts/base/notes.js"
+			],
+			[
+				"boots",
+				"app/assets/stylesheets/bootstrap_and_overrides.css.scss"
+			],
+			[
+				"index",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"guard",
+				"Guardfile"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"omnia",
+				"config/initializers/omniauth.rb"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"notes.cs",
+				"app/assets/stylesheets/notes.css.scss"
+			],
+			[
+				"notes",
+				"app/controllers/notes_controller.rb"
+			],
+			[
+				"notes.h",
+				"app/views/notes/_main_note_list.html.erb"
+			],
+			[
+				"app",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"note",
+				"app/models/note.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"controller",
+				"app/controllers/notes_controller.rb"
+			],
+			[
+				"config",
+				"config.ru"
+			],
+			[
+				".js",
+				"app/assets/javascripts/notes.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true
+}

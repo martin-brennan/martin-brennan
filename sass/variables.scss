@@ -1,0 +1,25 @@
+//Define global colour variables.
+$accent:     #E52066;
+$orange:     #EA9723;
+$purple:     #C42624;
+$light-blue: #1FC6E4;
+$yellow:     #FFE000;
+$green:      #30F2BF;
+$red:        #E06934;
+$pink:       #F086B6;
+
+//Font variables.
+@mixin bariol($size, $lh) {
+	font-size: $size;
+	line-height: $lh;
+	font-family: "bariol-regular", Sans-Serif;
+	color: #000;
+}
+
+@mixin neue($size, $lh) {
+	font-size: $size;
+	line-height: $lh;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+	font-weight: 700;
+	color: #000;
+}
