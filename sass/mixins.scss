@@ -1,0 +1,64 @@
+@import "compass/css3/border-radius";
+
+//Code mixins.
+@mixin code-font {
+	font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
+}
+
+//Font mixins.
+@mixin bariol($size, $lh) {
+	font-size: $size;
+	line-height: $lh;
+	font-family: "bariol-regular", Sans-Serif;
+	color: #000;
+}
+
+@mixin neue($size, $lh) {
+	font-size: $size;
+	line-height: $lh;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+	font-weight: 700;
+	color: #000;
+}
+
+@mixin neue-light($size, $lh) {
+	font-size: $size;
+	line-height: $lh;
+	font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+	font-weight: 400;
+	color: #000;
+}
+
+//Image and icon mixins.
+@mixin roundedimg {
+	@include border-radius(60px, 60px);
+}
+
+@mixin sprite {
+	background: url('../img/sprites-retina.png') no-repeat center center;
+}
+
+@media only screen
+	and (-webkit-min-device-pixel-ratio: 2)
+	and (min-resolution: 192dpi)
+	{
+		@mixin sprite {
+			background: url('../img/sprites-retina.png') no-repeat center center;
+		}
+	}
+
+@mixin sprite-large {
+	@include sprite;
+	width: 65px;
+	height: 65px;
+}
+@mixin sprite-med {
+	@include sprite;
+	width: 45px;
+	height: 45px;
+}
+@mixin sprite-small {
+	@include sprite;
+	width: 38px;
+	height: 38px;
+}

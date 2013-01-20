@@ -3,7 +3,7 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata></metadata>
 <defs>
-<font id="bariol_thinregular" horiz-adv-x="1040" >
+<font id="bariol-thin" horiz-adv-x="1040" >
 <font-face units-per-em="2048" ascent="1612" descent="-436" />
 <missing-glyph horiz-adv-x="512" />
 <glyph unicode="&#x2e;&#x2e;&#x2e;" horiz-adv-x="1501" d="M109 23q0 40 34 40q35 0 35 -40q0 -39 -35 -39q-34 0 -34 39zM715 23q0 40 35 40q34 0 34 -40q0 -39 -34 -39q-35 0 -35 39zM1321 23q0 40 35 40t35 -40q0 -39 -35 -39t-35 39z" />

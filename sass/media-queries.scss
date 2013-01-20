@@ -1,0 +1,38 @@
+/* iPads (portrait) ----------- */
+@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px)
+	and (orientation: portrait)
+	{
+		h1 {
+			&.header-title {
+				@include neue(308%, 1em);
+				padding: 0;
+			}
+			a {
+				@include neue(225%, 1em);
+			}
+		}
+		header {
+			width: 720px;
+			margin: 0 auto;
+		}
+		.container {
+			width: 720px;
+		}
+		footer {
+			height: auto;
+			margin: 60px auto;
+			width: 720px;
+			p {
+				font-size: 75%;
+				color: $metagrey;
+			}
+			a {
+				font-family: "bariol-bold"
+			}
+		}
+		p {
+			@include bariol(120%, 1.6em);
+		}
+}

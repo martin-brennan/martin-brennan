@@ -69,37 +69,47 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: 'bariol-regular';
-  src: url("fonts/bariol_regular-webfont.eot");
-  src: url("fonts/bariol_regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bariol_regular-webfont.woff") format("woff"), url("fonts/bariol_regular-webfont.ttf") format("truetype"), url("fonts/bariol_regular-webfont.svg#bariol_regularregular") format("svg");
+  src: url("../fonts/bariol_regular-webfont.eot#") format("eot"), url("../fonts/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol_regular-webfont.svg#bariol-regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bariol-regularitalic';
+  src: url("../fonts/bariol_regular_italic-webfont.eot#") format("eot"), url("../fonts/bariol_regular_italic-webfont.woff") format("woff"), url("../fonts/bariol_regular_italic-webfont.ttf") format("truetype"), url("../fonts/bariol_regular_italic-webfont.svg#bariol-regularitalic") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bariol-regularitalic';
+  src: url("../fonts/bariol_regular-webfont.eot#") format("eot"), url("../fonts/bariol_regular-webfont.woff") format("woff"), url("../fonts/bariol_regular-webfont.ttf") format("truetype"), url("../fonts/bariol_regular-webfont.svg#bariol-regular") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bariol-thin';
-  src: url("fonts/bariol_thin-webfont.eot");
-  src: url("fonts/bariol_thin-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bariol_thin-webfont.woff") format("woff"), url("fonts/bariol_thin-webfont.ttf") format("truetype"), url("fonts/bariol_thin-webfont.svg#bariol_thinregular") format("svg");
+  src: url("../fonts/bariol_thin-webfont.eot#") format("eot"), url("../fonts/bariol_thin-webfont.woff") format("woff"), url("../fonts/bariol_thin-webfont.ttf") format("truetype"), url("../fonts/bariol_thin-webfont.svg#bariol-thin") format("svg");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bariol-light';
-  src: url("fonts/bariol_light-webfont.eot");
-  src: url("fonts/bariol_light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bariol_light-webfont.woff") format("woff"), url("fonts/bariol_light-webfont.ttf") format("truetype"), url("fonts/bariol_light-webfont.svg#bariol_lightlight") format("svg");
+  src: url("../fonts/bariol_light-webfont.eot#") format("eot"), url("../fonts/bariol_light-webfont.woff") format("woff"), url("../fonts/bariol_light-webfont.ttf") format("truetype"), url("../fonts/bariol_light-webfont.svg#bariol-light") format("svg");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'bariol-bold';
-  src: url("fonts/bariol_bold-webfont.eot");
-  src: url("fonts/bariol_bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/bariol_bold-webfont.woff") format("woff"), url("fonts/bariol_bold-webfont.ttf") format("truetype"), url("fonts/bariol_bold-webfont.svg#bariol_boldbold") format("svg");
+  src: url("../fonts/bariol_bold-webfont.eot#") format("eot"), url("../fonts/bariol_bold-webfont.woff") format("woff"), url("../fonts/bariol_bold-webfont.ttf") format("truetype"), url("../fonts/bariol_bold-webfont.svg#bariol-bold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 body, html {
   font-size: 100%;
   line-height: 1.6em;
@@ -109,14 +119,29 @@ body, html {
   height: 100%;
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
+::selection {
+  background-color: #1fc6e4;
+}
+
+/* line 23, ../sass/screen.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 27, ../sass/screen.scss */
+.hidden {
+  display: none;
+}
+
+/* line 32, ../sass/screen.scss */
 p {
   font-size: 100%;
   line-height: 1.6em;
   font-family: "bariol-regular", Sans-Serif;
   color: #000;
 }
-/* line 20, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 p.header-desc {
   font-size: 85%;
   line-height: 1.6em;
@@ -124,40 +149,367 @@ p.header-desc {
   color: #000;
   color: #6a6a6a;
 }
+/* line 38, ../sass/screen.scss */
+p.post-meta {
+  font-size: 100%;
+  line-height: 1.6em;
+  font-family: "bariol-regular", Sans-Serif;
+  color: #000;
+  color: #6a6a6a;
+  margin: 0 0 22px 0 !important;
+}
+/* line 42, ../sass/screen.scss */
+p.post-meta a {
+  color: #6a6a6a;
+  font-weight: 700;
+}
+/* line 47, ../sass/screen.scss */
+p code {
+  font-family: Monospace;
+  font-size: 100%;
+  padding: 5px;
+  background-color: #e5e5e5;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 55, ../sass/screen.scss */
+p em {
+  font-family: "bariol-regularitalic";
+}
+/* line 58, ../sass/screen.scss */
+p strong {
+  font-family: "bariol-bold";
+}
 
-/* line 26, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
+blockquote {
+  margin-left: 40px;
+  border-left: 5px solid #cccccc;
+  padding: 0 0 0 15px;
+  font-size: 110%;
+  line-height: 1.6em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 400;
+  color: #000;
+  width: 80%;
+}
+/* line 69, ../sass/screen.scss */
+blockquote p {
+  font-size: 110%;
+  line-height: 1.6em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 400;
+  color: #000;
+}
+
+/* line 74, ../sass/screen.scss */
 a {
   font-size: 100%;
   line-height: 1.6em;
   font-family: "bariol-regular", Sans-Serif;
   color: #000;
   color: #e52066;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+}
+/* line 80, ../sass/screen.scss */
+a:hover {
+  color: #f086b6;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 h1 {
+  padding: 5px 0;
+}
+/* line 87, ../sass/screen.scss */
+h1.header-title {
   font-size: 325%;
+  line-height: 1em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  padding: 0;
+}
+/* line 91, ../sass/screen.scss */
+h1 a {
+  font-size: 200%;
   line-height: 1em;
   font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
   font-weight: 700;
   color: #000;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
+h2 {
+  font-size: 175%;
+  line-height: 1em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* line 101, ../sass/screen.scss */
+h3 {
+  font-size: 150%;
+  line-height: 1em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* line 106, ../sass/screen.scss */
+h4 {
+  font-size: 125%;
+  line-height: 1em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  margin: 10px 0;
+}
+
+/* line 111, ../sass/screen.scss */
+ul {
+  margin-left: 30px;
+}
+/* line 113, ../sass/screen.scss */
+ul li {
+  list-style-type: disc;
+}
+
+/* line 119, ../sass/screen.scss */
+pre {
+  margin: 20px 0;
+}
+
+/* line 123, ../sass/screen.scss */
+code {
+  font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
+  font-size: 100%;
+  overflow: auto;
+}
+
+/* line 130, ../sass/screen.scss */
 header {
   width: 1020px;
   margin: 0 auto;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .header-main {
   padding: 20px 0;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .head-line {
-  position: relative;
-  width: 1000%;
-  margin-left: -500%;
+  position: absolute;
+  width: 100%;
+  left: 0;
   border: 3px solid #e52066;
+}
+
+/* line 146, ../sass/screen.scss */
+.header-social {
+  float: right;
+  padding: 14px 0;
+}
+
+/* line 153, ../sass/screen.scss */
+nav ul {
+  margin: 15px 0;
+}
+/* line 155, ../sass/screen.scss */
+nav ul li {
+  float: left;
+  list-style-type: none;
+  margin: 0 25px 0 0;
+}
+/* line 159, ../sass/screen.scss */
+nav ul li a {
+  color: black;
+  font-size: 125%;
+  line-height: 1.6em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  font-weight: 700;
+}
+
+/* line 170, ../sass/screen.scss */
+img.round, div.round {
+  -webkit-border-radius: 60px 60px;
+  -moz-border-radius: 60px / 60px;
+  border-radius: 60px / 60px;
+}
+/* line 172, ../sass/screen.scss */
+img.round.side, div.round.side {
+  background: url("../img/sprites-retina.png") no-repeat center center;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  margin: 10px 0 10px -126px;
+}
+/* line 176, ../sass/screen.scss */
+img.round.side.av, div.round.side.av {
+  height: auto;
+  width: auto;
+}
+/* line 180, ../sass/screen.scss */
+img.round.side.cat, div.round.side.cat {
+  margin: -10px 0 10px -110px;
+}
+/* line 184, ../sass/screen.scss */
+img.round.head, div.round.head {
+  background: url("../img/sprites-retina.png") no-repeat center center;
+  width: 45px;
+  height: 45px;
+  float: right;
+  margin: 0 15px;
+}
+/* line 189, ../sass/screen.scss */
+img.round.page, div.round.page {
+  background: url("../img/sprites-retina.png") no-repeat center center;
+  width: 65px;
+  height: 65px;
+  margin: 0 15px;
+  float: right;
+}
+/* line 194, ../sass/screen.scss */
+img.round.foot, div.round.foot {
+  background: url("../img/sprites-retina.png") no-repeat center center;
+  width: 38px;
+  height: 38px;
+  float: left;
+  margin: 0 15px;
+}
+
+/* line 203, ../sass/screen.scss */
+.container {
+  width: 1020px;
+  margin: 35px auto;
+}
+
+/* line 208, ../sass/screen.scss */
+article {
+  margin-bottom: 40px;
+}
+/* line 210, ../sass/screen.scss */
+article p {
+  margin: 1em 0;
+}
+
+/* line 216, ../sass/screen.scss */
+.post-share {
+  margin: 20px 0;
+}
+
+/* line 220, ../sass/screen.scss */
+.twitter-share-button {
+  width: 85px !important;
+}
+
+/* line 224, ../sass/screen.scss */
+.post-share iframe:first {
+  width: 85px !important;
+}
+
+/* line 228, ../sass/screen.scss */
+.pagination {
+  width: 190px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 235, ../sass/screen.scss */
+footer {
+  height: 110px;
+  margin: 60px auto;
+  width: 1020px;
+}
+/* line 239, ../sass/screen.scss */
+footer p {
+  font-size: 75%;
+  color: #6a6a6a;
+}
+/* line 243, ../sass/screen.scss */
+footer a {
+  font-family: "bariol-bold";
+}
+
+/* line 248, ../sass/screen.scss */
+.footer-center {
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 254, ../sass/screen.scss */
+.footer-social {
+  width: 340px;
+  margin: 14px auto;
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* line 8, ../sass/media-queries.scss */
+  h1.header-title {
+    font-size: 308%;
+    line-height: 1em;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+    font-weight: 700;
+    color: #000;
+    padding: 0;
+  }
+  /* line 12, ../sass/media-queries.scss */
+  h1 a {
+    font-size: 225%;
+    line-height: 1em;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+    font-weight: 700;
+    color: #000;
+  }
+
+  /* line 16, ../sass/media-queries.scss */
+  header {
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  /* line 20, ../sass/media-queries.scss */
+  .container {
+    width: 720px;
+  }
+
+  /* line 23, ../sass/media-queries.scss */
+  footer {
+    height: auto;
+    margin: 60px auto;
+    width: 720px;
+  }
+  /* line 27, ../sass/media-queries.scss */
+  footer p {
+    font-size: 75%;
+    color: #6a6a6a;
+  }
+  /* line 31, ../sass/media-queries.scss */
+  footer a {
+    font-family: "bariol-bold";
+  }
+
+  /* line 35, ../sass/media-queries.scss */
+  p {
+    font-size: 120%;
+    line-height: 1.6em;
+    font-family: "bariol-regular", Sans-Serif;
+    color: #000;
+  }
 }
