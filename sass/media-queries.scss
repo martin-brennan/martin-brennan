@@ -162,6 +162,9 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
 				color: #6a6a6a;
 			}
 		}
+		.archive-item, .repo-result span {
+			font-size: 80%;
+		}
 		code {
 			@include code-font;
 			font-size: 80%;
@@ -281,6 +284,10 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:landscape)
 				@include bariol(60%, 1.6em);
 				color: #6a6a6a;
 			}
+		}
+		.archive-item {
+			font-size: 60%;
+			line-height: 1em;
 		}
 		code {
 			@include code-font;

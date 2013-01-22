@@ -11,10 +11,10 @@ $(function () {
  * colour and background-pos set.
  */
 function setPostIcons() {
-	$('.container').find('article').each(function () {
+	$('.container').find('article, .archive-item').each(function () {
 		var $this    = $(this),
 			category = $this.find('input[type=hidden]').val(),
-			$icon    = $this.find('div.round.side.cat');
+			$icon    = $this.find('div.round.side.cat, div.micro.round.archive');
 
 		setPostIcon(category, $icon);
 	});
@@ -62,4 +62,30 @@ function setPostIcon (cat, $el) {
 		break;
 	};
 	$el.show();
+}
+
+//Get the repository information as a JSONP callback, using the API URL in the script tag below.
+function getRepos(data) {
+	//Get the template URL of the blog.
+	var templateUrl = $('#hf_templateURL').val();
+	//Load the repository data in a variable.
+	var repos = data.data;
+
+	//Loop through all returned repositories.
+	for(var i = 0; i < repos.length; i++) {
+		//Get the pushed date and convert it to a more readable format.
+		var pushed = new Date(repos[i].pushed_at);
+		pushed = pushed.toString('dddd, d MMMM yyyy')
+
+		//Construct the information about the repo, using when it was last pushed, the clone URL and the description.
+		$('.repo-result').append('<h2><a target="_blank" href="' + repos[i].html_url + '">' + repos[i].name + '</a></h2>')
+					.append('<span>Last pushed on <strong>' + pushed + '</strong> | <div class="mbs micro inline">3</div> <a href="github-mac://openRepo/' + repos[i].html_url + '" title="Clone in GitHub for Mac">Clone in GitHub for Mac</a></span>')
+					.append('<p><pre class="markdown"><code>' + replaceURLWithHTMLLinks(repos[i].description) + '</code></pre></p>');
+	}
+}
+
+//Replaces any links found in the specified string with <a href> HTML links.
+function replaceURLWithHTMLLinks(text) {
+    var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+    return text.replace(exp,"<a target='_blank' href='$1'>$1</a>"); 
 }

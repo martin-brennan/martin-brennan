@@ -83,7 +83,7 @@ a {
 }
 
 h1 {
-	padding: 5px 0;
+	padding: 2px 0;
 	&.header-title {
 		@include neue(325%, 1em);
 		padding: 0;
@@ -95,7 +95,7 @@ h1 {
 
 h2 {
 	@include neue(175%, 1em);
-	margin: 10px 0;
+	margin: 20px 0;
 }
 
 h3 {
@@ -181,6 +181,14 @@ img, div {
 				margin: -10px 0 10px -110px;
 			}
 		}
+		&.floated {
+			@include sprite-med;
+			float:left;
+			&.cat {
+				margin-right: 20px;
+				margin-top: 4px;
+			}
+		}
 		&.head {
 			@include sprite-med;
 			float: right;
@@ -191,10 +199,15 @@ img, div {
 			margin: 0 15px;
 			float: right;
 		}
+		&.archive {
+			@include sprite-micro;
+			margin-right: 10px;
+			float: left;
+		}
 		&.foot {
 			@include sprite-small;
 			float: left;
-			margin: 0 15px;
+			margin: 0 22px;
 		}
 	}
 }
@@ -209,6 +222,17 @@ article {
 	margin-bottom: 40px;
 	p {
 		margin: 1em 0;
+	}
+}
+
+.about-me {
+	img {
+		@include roundedimg-large;
+	}
+	text-align: center;
+	h1 {
+		@include neue(220%, 1em);
+		margin: 10px 0 30px;
 	}
 }
 
@@ -229,6 +253,10 @@ article {
 	width: 190px;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.archive-item {
+	margin: 10px 0;
 }
 
 //Footer styles
@@ -252,7 +280,7 @@ footer {
 }
 
 .footer-social {
-	width: 340px;
+	width: 410px;
 	margin: 14px auto;
 }
 

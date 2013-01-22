@@ -28,5 +28,7 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/highlight/highlight.pack.js"></script>
+	<!-- Load the JSONP data using the GitHub API -->
+	<script src="https://api.github.com/users/martin-brennan/repos?callback=getRepos"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </html>

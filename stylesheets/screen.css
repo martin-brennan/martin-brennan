@@ -128,14 +128,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-font-smoothing: antialiased;
 }
 
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"]:before {
-*/
-/* line 88, ../sass/fonts.scss */
-.icon-twitter:before, .icon-tutorial:before, .icon-stack:before, .icon-share:before, .icon-rss:before, .icon-pencil:before, .icon-pi:before, .icon-obs:before, .icon-news:before, .icon-right:before, .icon-left:before, .icon-gh:before, .icon-dev:before, .icon-design:before, .icon-begg:before, .icon-aha:before, .icon-imb:before {
+/* line 82, ../sass/fonts.scss */
+.icon-twitter:before, .icon-tutorial:before, .icon-stack:before, .icon-share:before, .icon-rss:before, .icon-pencil:before, .icon-pi:before, .icon-obs:before, .icon-news:before, .icon-right:before, .icon-left:before, .icon-gh:before, .icon-dev:before, .icon-design:before, .icon-begg:before, .icon-aha:before, .icon-imb:before, .icon-apple:before {
   font-family: 'mbsprite';
   speak: none;
   font-style: normal;
@@ -144,106 +138,121 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 96, ../sass/fonts.scss */
+/* line 90, ../sass/fonts.scss */
 .icon-twitter:before {
   content: "\74";
 }
 
-/* line 99, ../sass/fonts.scss */
+/* line 93, ../sass/fonts.scss */
 .icon-tutorial:before {
   content: "\6d";
 }
 
-/* line 102, ../sass/fonts.scss */
+/* line 96, ../sass/fonts.scss */
 .icon-stack:before {
   content: "\73";
 }
 
-/* line 105, ../sass/fonts.scss */
+/* line 99, ../sass/fonts.scss */
 .icon-share:before {
   content: "\6c";
 }
 
-/* line 108, ../sass/fonts.scss */
+/* line 102, ../sass/fonts.scss */
 .icon-rss:before {
   content: "\72";
 }
 
-/* line 111, ../sass/fonts.scss */
+/* line 105, ../sass/fonts.scss */
 .icon-pencil:before {
   content: "\77";
 }
 
-/* line 114, ../sass/fonts.scss */
+/* line 108, ../sass/fonts.scss */
 .icon-pi:before {
   content: "\70";
 }
 
-/* line 117, ../sass/fonts.scss */
+/* line 111, ../sass/fonts.scss */
 .icon-obs:before {
   content: "\6f";
 }
 
-/* line 120, ../sass/fonts.scss */
+/* line 114, ../sass/fonts.scss */
 .icon-news:before {
   content: "\6e";
 }
 
-/* line 123, ../sass/fonts.scss */
+/* line 117, ../sass/fonts.scss */
 .icon-right:before {
   content: "\31";
 }
 
-/* line 126, ../sass/fonts.scss */
+/* line 120, ../sass/fonts.scss */
 .icon-left:before {
   content: "\32";
 }
 
-/* line 129, ../sass/fonts.scss */
+/* line 123, ../sass/fonts.scss */
 .icon-gh:before {
   content: "\67";
 }
 
-/* line 132, ../sass/fonts.scss */
+/* line 126, ../sass/fonts.scss */
 .icon-dev:before {
   content: "\63";
 }
 
-/* line 135, ../sass/fonts.scss */
+/* line 129, ../sass/fonts.scss */
 .icon-design:before {
   content: "\64";
 }
 
-/* line 138, ../sass/fonts.scss */
+/* line 132, ../sass/fonts.scss */
 .icon-begg:before {
   content: "\62";
 }
 
-/* line 141, ../sass/fonts.scss */
+/* line 135, ../sass/fonts.scss */
 .icon-aha:before {
   content: "\61";
 }
 
-/* line 144, ../sass/fonts.scss */
+/* line 138, ../sass/fonts.scss */
 .icon-imb:before {
   content: "\69";
 }
 
-/* line 148, ../sass/fonts.scss */
+/* line 141, ../sass/fonts.scss */
+.icon-apple:before {
+  content: "\33";
+}
+
+/* line 145, ../sass/fonts.scss */
 .mbs {
-  font-family: "mbsprite";
+  font-family: "mbsprite" !important;
   color: white;
   line-height: 1em;
 }
-/* line 152, ../sass/fonts.scss */
+/* line 147, ../sass/fonts.scss */
+.mbs.inline {
+  display: inline-block;
+  color: black;
+  font-size: 100% !important;
+}
+/* line 154, ../sass/fonts.scss */
+.mbs.micro {
+  font-size: 22px;
+}
+/* line 157, ../sass/fonts.scss */
 .mbs.small {
   font-size: 36px;
 }
-/* line 155, ../sass/fonts.scss */
+/* line 160, ../sass/fonts.scss */
 .mbs.medium {
   font-size: 45px;
 }
-/* line 158, ../sass/fonts.scss */
+/* line 163, ../sass/fonts.scss */
 .mbs.large {
   font-size: 65px;
 }
@@ -366,7 +375,7 @@ a:hover {
 
 /* line 85, ../sass/screen.scss */
 h1 {
-  padding: 5px 0;
+  padding: 2px 0;
 }
 /* line 87, ../sass/screen.scss */
 h1.header-title {
@@ -393,7 +402,7 @@ h2 {
   font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
   font-weight: 700;
   color: #000;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 /* line 101, ../sass/screen.scss */
@@ -506,94 +515,137 @@ img.round.side.cat, div.round.side.cat {
   margin: -10px 0 10px -110px;
 }
 /* line 184, ../sass/screen.scss */
+img.round.floated, div.round.floated {
+  width: 45px;
+  height: 45px;
+  float: left;
+}
+/* line 187, ../sass/screen.scss */
+img.round.floated.cat, div.round.floated.cat {
+  margin-right: 20px;
+  margin-top: 4px;
+}
+/* line 192, ../sass/screen.scss */
 img.round.head, div.round.head {
   width: 45px;
   height: 45px;
   float: right;
   margin: 0 15px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 img.round.page, div.round.page {
   width: 65px;
   height: 65px;
   margin: 0 15px;
   float: right;
 }
-/* line 194, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
+img.round.archive, div.round.archive {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  float: left;
+}
+/* line 207, ../sass/screen.scss */
 img.round.foot, div.round.foot {
   width: 38px;
   height: 38px;
   float: left;
-  margin: 0 15px;
+  margin: 0 22px;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .container {
   width: 1020px;
   margin: 35px auto;
 }
 
-/* line 208, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 article {
   margin-bottom: 40px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 article p {
   margin: 1em 0;
 }
 
-/* line 216, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
+.about-me {
+  text-align: center;
+}
+/* line 229, ../sass/screen.scss */
+.about-me img {
+  -webkit-border-radius: 200px 200px;
+  -moz-border-radius: 200px / 200px;
+  border-radius: 200px / 200px;
+}
+/* line 233, ../sass/screen.scss */
+.about-me h1 {
+  font-size: 220%;
+  line-height: 1em;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", Sans-Serif;
+  font-weight: 700;
+  color: #000;
+  margin: 10px 0 30px;
+}
+
+/* line 240, ../sass/screen.scss */
 .post-share {
   margin: 20px 0;
 }
 
-/* line 220, ../sass/screen.scss */
+/* line 244, ../sass/screen.scss */
 .twitter-share-button {
   width: 85px !important;
 }
 
-/* line 224, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .post-share iframe:first {
   width: 85px !important;
 }
 
-/* line 228, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .pagination {
   width: 190px;
   text-align: center;
   margin: 0 auto;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
+.archive-item {
+  margin: 10px 0;
+}
+
+/* line 263, ../sass/screen.scss */
 footer {
   height: auto;
   margin: 60px auto;
   width: 1020px;
 }
-/* line 239, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 footer p {
   font-size: 75%;
   color: #6a6a6a;
 }
-/* line 243, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 footer a {
   font-family: "bariol-bold";
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .footer-center {
   width: 65%;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .footer-social {
-  width: 340px;
+  width: 410px;
   margin: 14px auto;
 }
 
-/* line 259, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .footer-after {
   height: 20px;
   display: none;
@@ -850,59 +902,64 @@ footer a {
   }
 
   /* line 165, ../sass/media-queries.scss */
+  .archive-item, .repo-result span {
+    font-size: 80%;
+  }
+
+  /* line 168, ../sass/media-queries.scss */
   code {
     font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
     font-size: 80%;
     overflow: auto;
   }
 
-  /* line 170, ../sass/media-queries.scss */
+  /* line 173, ../sass/media-queries.scss */
   pre {
     width: 95%;
   }
 
-  /* line 173, ../sass/media-queries.scss */
+  /* line 176, ../sass/media-queries.scss */
   footer {
     height: auto;
     margin: 60px auto;
     width: 100%;
   }
-  /* line 177, ../sass/media-queries.scss */
+  /* line 180, ../sass/media-queries.scss */
   footer p {
     font-size: 50%;
     color: #6a6a6a;
   }
-  /* line 181, ../sass/media-queries.scss */
+  /* line 184, ../sass/media-queries.scss */
   footer a {
     font-family: "bariol-bold";
   }
 
-  /* line 185, ../sass/media-queries.scss */
+  /* line 188, ../sass/media-queries.scss */
   .footer-after {
     display: block;
     width: 100%;
   }
 
-  /* line 189, ../sass/media-queries.scss */
+  /* line 192, ../sass/media-queries.scss */
   .footer-center {
     width: 80%;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* line 194, ../sass/media-queries.scss */
+  /* line 197, ../sass/media-queries.scss */
   .footer-social {
     width: auto;
     margin: 14px auto;
   }
 
-  /* line 200, ../sass/media-queries.scss */
+  /* line 203, ../sass/media-queries.scss */
   img.round, div.round {
     -webkit-border-radius: 60px 60px;
     -moz-border-radius: 60px / 60px;
     border-radius: 60px / 60px;
   }
-  /* line 202, ../sass/media-queries.scss */
+  /* line 205, ../sass/media-queries.scss */
   img.round.foot, div.round.foot {
     width: 38px;
     height: 38px;
@@ -912,7 +969,7 @@ footer a {
 }
 /* iPhones (landscape) ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-  /* line 217, ../sass/media-queries.scss */
+  /* line 220, ../sass/media-queries.scss */
   h1.header-title {
     font-size: 180%;
     line-height: 1em;
@@ -921,7 +978,7 @@ footer a {
     color: #000;
     padding: 0;
   }
-  /* line 221, ../sass/media-queries.scss */
+  /* line 224, ../sass/media-queries.scss */
   h1 a {
     font-size: 120%;
     line-height: 1em;
@@ -931,7 +988,7 @@ footer a {
     word-wrap: break-word;
   }
 
-  /* line 226, ../sass/media-queries.scss */
+  /* line 229, ../sass/media-queries.scss */
   h2 {
     font-size: 95%;
     line-height: 1em;
@@ -941,7 +998,7 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 231, ../sass/media-queries.scss */
+  /* line 234, ../sass/media-queries.scss */
   h3 {
     font-size: 70%;
     line-height: 1em;
@@ -951,7 +1008,7 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 236, ../sass/media-queries.scss */
+  /* line 239, ../sass/media-queries.scss */
   h4 {
     font-size: 55%;
     line-height: 1em;
@@ -961,44 +1018,44 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 240, ../sass/media-queries.scss */
+  /* line 243, ../sass/media-queries.scss */
   body {
     padding: 0 10px;
   }
 
-  /* line 243, ../sass/media-queries.scss */
+  /* line 246, ../sass/media-queries.scss */
   header {
     width: 100%;
     margin: 0 auto;
   }
 
-  /* line 247, ../sass/media-queries.scss */
+  /* line 250, ../sass/media-queries.scss */
   .header-social {
     display: none;
   }
 
-  /* line 250, ../sass/media-queries.scss */
+  /* line 253, ../sass/media-queries.scss */
   .head-line {
     width: 98%;
     left: 10px;
   }
 
-  /* line 254, ../sass/media-queries.scss */
+  /* line 257, ../sass/media-queries.scss */
   .header-phone img {
     display: block !important;
   }
 
-  /* line 258, ../sass/media-queries.scss */
+  /* line 261, ../sass/media-queries.scss */
   nav ul {
     margin: 15px 0;
   }
-  /* line 260, ../sass/media-queries.scss */
+  /* line 263, ../sass/media-queries.scss */
   nav ul li {
     float: left;
     list-style-type: none;
     margin: 0 25px 0 0;
   }
-  /* line 264, ../sass/media-queries.scss */
+  /* line 267, ../sass/media-queries.scss */
   nav ul li a {
     color: black;
     font-size: 100%;
@@ -1009,26 +1066,26 @@ footer a {
     font-weight: 700;
   }
 
-  /* line 272, ../sass/media-queries.scss */
+  /* line 275, ../sass/media-queries.scss */
   .container {
     width: 100%;
   }
 
-  /* line 275, ../sass/media-queries.scss */
+  /* line 278, ../sass/media-queries.scss */
   p {
     font-size: 60%;
     line-height: 1.6em;
     font-family: "bariol-regular", Sans-Serif;
     color: #000;
   }
-  /* line 277, ../sass/media-queries.scss */
+  /* line 280, ../sass/media-queries.scss */
   p.post-meta {
     font-size: 60%;
     line-height: 1.6em;
     font-family: "bariol-regular", Sans-Serif;
     color: #000;
   }
-  /* line 280, ../sass/media-queries.scss */
+  /* line 283, ../sass/media-queries.scss */
   p.header-desc {
     font-size: 60%;
     line-height: 1.6em;
@@ -1037,60 +1094,66 @@ footer a {
     color: #6a6a6a;
   }
 
-  /* line 285, ../sass/media-queries.scss */
+  /* line 288, ../sass/media-queries.scss */
+  .archive-item {
+    font-size: 60%;
+    line-height: 1em;
+  }
+
+  /* line 292, ../sass/media-queries.scss */
   code {
     font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
     font-size: 60%;
     overflow: auto;
   }
 
-  /* line 290, ../sass/media-queries.scss */
+  /* line 297, ../sass/media-queries.scss */
   pre {
     width: 95%;
   }
 
-  /* line 293, ../sass/media-queries.scss */
+  /* line 300, ../sass/media-queries.scss */
   footer {
     height: auto;
     margin: 60px auto;
     width: 100%;
   }
-  /* line 297, ../sass/media-queries.scss */
+  /* line 304, ../sass/media-queries.scss */
   footer p {
     font-size: 50%;
     color: #6a6a6a;
   }
-  /* line 301, ../sass/media-queries.scss */
+  /* line 308, ../sass/media-queries.scss */
   footer a {
     font-family: "bariol-bold";
   }
 
-  /* line 305, ../sass/media-queries.scss */
+  /* line 312, ../sass/media-queries.scss */
   .footer-after {
     display: block;
     width: 100%;
   }
 
-  /* line 309, ../sass/media-queries.scss */
+  /* line 316, ../sass/media-queries.scss */
   .footer-center {
     width: 80%;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* line 314, ../sass/media-queries.scss */
+  /* line 321, ../sass/media-queries.scss */
   .footer-social {
     width: auto;
     margin: 14px auto;
   }
 
-  /* line 320, ../sass/media-queries.scss */
+  /* line 327, ../sass/media-queries.scss */
   img.round, div.round {
     -webkit-border-radius: 60px 60px;
     -moz-border-radius: 60px / 60px;
     border-radius: 60px / 60px;
   }
-  /* line 322, ../sass/media-queries.scss */
+  /* line 329, ../sass/media-queries.scss */
   img.round.foot, div.round.foot {
     width: 38px;
     height: 38px;
