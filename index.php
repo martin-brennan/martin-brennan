@@ -5,7 +5,7 @@
 		<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 				<article>
-					<div class="round side cat hidden" title="Martin Brennan" style="background-position: -4px -259px; background-color: #f6891f;"></div>
+					<div class="mbs large round side cat hidden" title="Martin Brennan" style="background-position: -4px -259px; background-color: #f6891f;"></div>
 					<input type="hidden" value="<?php echo get_post_meta($post->ID, 'iconcategory', true); ?>"></input>
 					<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					<p class="post-meta">By <? the_author(); ?> on <? the_date(); ?>.

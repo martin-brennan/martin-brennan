@@ -1,9 +1,12 @@
+@import "variables";
+@import "mixins";
 /* iPads (portrait) ----------- */
 @media only screen 
 	and (min-device-width : 768px) 
 	and (max-device-width : 1024px)
 	and (orientation: portrait)
 	{
+		$width: 720px;
 		h1 {
 			&.header-title {
 				@include neue(308%, 1em);
@@ -14,16 +17,16 @@
 			}
 		}
 		header {
-			width: 720px;
+			width: $width;
 			margin: 0 auto;
 		}
 		.container {
-			width: 720px;
+			width: $width;
 		}
 		footer {
 			height: auto;
 			margin: 60px auto;
-			width: 720px;
+			width: $width;
 			p {
 				font-size: 75%;
 				color: $metagrey;
@@ -35,4 +38,292 @@
 		p {
 			@include bariol(120%, 1.6em);
 		}
+		.footer-after {
+			display: block;
+			width: $width;
+		}
 }
+
+/* iPads (landscape) ----------- */
+@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px)
+	and (orientation: landscape)
+	{
+		$width: 976px;
+		h1 {
+			&.header-title {
+				@include neue(308%, 1em);
+				padding: 0;
+			}
+			a {
+				@include neue(225%, 1em);
+			}
+		}
+		header {
+			width: $width;
+			margin: 0 auto;
+		}
+		.container {
+			width: $width;
+		}
+		footer {
+			height: auto;
+			margin: 60px auto;
+			width: $width;
+			p {
+				font-size: 75%;
+				color: $metagrey;
+			}
+			a {
+				font-family: "bariol-bold"
+			}
+		}
+		p {
+			@include bariol(120%, 1.6em);
+		}
+		.footer-after {
+			display: block;
+			width: $width;
+		}
+}
+
+/* iPhones (portrait) ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:portrait),
+only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
+	{
+		$width: 100%;
+		h1 {
+			&.header-title {
+				@include neue(180%, 1em);
+				padding: 0;
+			}
+			a {
+				@include neue(120%, 1em);
+				word-wrap: break-word;
+			}
+		}
+		h2 {
+			@include neue(95%, 1em);
+			margin: 10px 0;
+		}
+
+		h3 {
+			@include neue(70%, 1em);
+			margin: 10px 0;
+		}
+
+		h4 {
+			@include neue(55%, 1em);
+			margin: 10px 0;
+		}
+		body {
+			padding: 0 10px;
+		}
+		header {
+			width: $width;
+			margin: 0 auto;
+		}
+		.header-social {
+			display: none;
+		}
+		.head-line {
+			width: 98%;
+			left: 10px;
+		}
+		.header-phone img {
+			display:block !important;
+		}
+		nav {
+			ul {
+				margin: 15px 0;
+				li {
+					float: left;
+					list-style-type: none;
+					margin: 0 25px 0 0;
+					a {
+						color: black;
+						@include neue(100%, 1.6em);
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		.container {
+			width: $width;
+		}
+		p {
+			@include bariol(80%, 1.6em);
+			&.post-meta {
+				@include bariol(80%, 1.6em);
+			}
+			&.header-desc {
+				@include bariol(40%, 1.6em);
+				color: #6a6a6a;
+			}
+		}
+		code {
+			@include code-font;
+			font-size: 80%;
+			overflow: auto;
+		}
+		pre {
+			width: 95%;
+		}
+		footer {
+			height: auto;
+			margin: 60px auto;
+			width: $width;
+			p {
+				font-size: 50%;
+				color: $metagrey;
+			}
+			a {
+				font-family: "bariol-bold"
+			}
+		}
+		.footer-after {
+			display: block;
+			width: $width;
+		}
+		.footer-center {
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.footer-social {
+			width: auto;
+			margin: 14px auto;
+		}
+
+		img, div {
+			&.round {
+				@include roundedimg;
+				&.foot {
+					@include sprite-small;
+					float: left;
+					margin: 0 6px;
+				}
+			}
+		}
+	}
+
+/* iPhones (landscape) ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:landscape),
+only screen and (min-device-pixel-ratio : 2)  and (orientation:landscape)
+	{
+		$width: 100%;
+		h1 {
+			&.header-title {
+				@include neue(180%, 1em);
+				padding: 0;
+			}
+			a {
+				@include neue(120%, 1em);
+				word-wrap: break-word;
+			}
+		}
+		h2 {
+			@include neue(95%, 1em);
+			margin: 10px 0;
+		}
+
+		h3 {
+			@include neue(70%, 1em);
+			margin: 10px 0;
+		}
+
+		h4 {
+			@include neue(55%, 1em);
+			margin: 10px 0;
+		}
+		body {
+			padding: 0 10px;
+		}
+		header {
+			width: $width;
+			margin: 0 auto;
+		}
+		.header-social {
+			display: none;
+		}
+		.head-line {
+			width: 98%;
+			left: 10px;
+		}
+		.header-phone img {
+			display:block !important;
+		}
+		nav {
+			ul {
+				margin: 15px 0;
+				li {
+					float: left;
+					list-style-type: none;
+					margin: 0 25px 0 0;
+					a {
+						color: black;
+						@include neue(100%, 1.6em);
+						font-weight: 700;
+					}
+				}
+			}
+		}
+		.container {
+			width: $width;
+		}
+		p {
+			@include bariol(60%, 1.6em);
+			&.post-meta {
+				@include bariol(60%, 1.6em);
+			}
+			&.header-desc {
+				@include bariol(60%, 1.6em);
+				color: #6a6a6a;
+			}
+		}
+		code {
+			@include code-font;
+			font-size: 60%;
+			overflow: auto;
+		}
+		pre {
+			width: 95%;
+		}
+		footer {
+			height: auto;
+			margin: 60px auto;
+			width: $width;
+			p {
+				font-size: 50%;
+				color: $metagrey;
+			}
+			a {
+				font-family: "bariol-bold"
+			}
+		}
+		.footer-after {
+			display: block;
+			width: $width;
+		}
+		.footer-center {
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.footer-social {
+			width: auto;
+			margin: 14px auto;
+		}
+
+		img, div {
+			&.round {
+				@include roundedimg;
+				&.foot {
+					@include sprite-small;
+					float: left;
+					margin: 0 26px;
+				}
+			}
+		}
+	}

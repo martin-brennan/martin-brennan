@@ -31,20 +31,23 @@
 			<div class="header-main">
 				<div class="header-social">
 					<a href="http://martin-brennan.com/feed" target="_blank" title="Add Martin Brennan to your RSS Feeds">
-						<div class="round head" title="Add Martin Brennan to your RSS Feeds" alt="Add Martin Brennan to your RSS Feeds" style="background-position: -65px -226px; background-color: #ea9522;"></div>
+						<div class="mbs medium round head" style=" background-color: #ea9522;">r</div>
 					</a>
 					<a href="http://stackoverflow.com/users/875941/martin-brennan" target="_blank" title="Martin Brennan on StackOverflow">
-						<div class="round head" title="Martin Brennan on StackOverflow" alt="Martin Brennan on StackOverflow" style="background-position: -65px -182px; background-color: #f6891f;"></div>
+						<div class="mbs medium round head" style=" background-color: #f6891f;">s</div>
 					</a>
 					<a href="https://github.com/Martin-Brennan" target="_blank" title="Martin Brennan on GitHub">
-						<div class="round head" title="Martin Brennan on GitHub" alt="Martin Brennan on GitHub" style="background-position: -65px -673px; background-color: #000;"></div>
+						<div class="mbs medium round head" style=" background-color: #000;">g</div>
 					</a>
 					<a href="http://twitter.com/mjrbrennandev" target="_blank" title="Martin Brennan on Twitter">
-						<div class="round head" title="Martin Brennan on Twitter" alt="Martin Brennan on Twitter" style="background-position: -65px -271px; background-color: #3CAAE4;"></div>
+						<div class="mbs medium round head" style=" background-color: #3CAAE4;">t</div>
 					</a>
 					<a href="http://www.imbibeblog.com" target="_blank" title="Beer, wine, cocktail, bar and spirit reviews on imbíbe">
-						<div class="round head" title="Beer, wine, cocktail, bar and spirit reviews on imbíbe" alt="Beer, wine, cocktail, bar and spirit reviews on imbíbe" style="background-position: -66px -715px; background-color: #CC5630;"></div>
+						<div class="mbs medium round head" style=" background-color: #CC5630;">i</div>
 					</a>
+				</div>
+				<div class="header-phone">
+					<img class="round head av" src="http://www.gravatar.com/avatar/e61d50823d8a61ae2e50aa1b62c29ab5?s=960" title="Martin Brennan" style="width:40px; height: 40px; display:none;" />
 				</div>
 				<h1 class="header-title">
 					Martin Brennan

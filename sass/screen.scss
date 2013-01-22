@@ -189,7 +189,7 @@ img, div {
 		&.page {
 			@include sprite-large;
 			margin: 0 15px;
-			float:right;
+			float: right;
 		}
 		&.foot {
 			@include sprite-small;
@@ -233,7 +233,7 @@ article {
 
 //Footer styles
 footer {
-	height: 110px;
+	height: auto;
 	margin: 60px auto;
 	width: 1020px;
 	p {
@@ -254,6 +254,12 @@ footer {
 .footer-social {
 	width: 340px;
 	margin: 14px auto;
+}
+
+.footer-after {
+	height: 20px;
+	display: none;
+	width: 1020px;
 }
 
 @import "media-queries";

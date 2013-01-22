@@ -48,17 +48,14 @@
 	}
 
 @mixin sprite-large {
-	@include sprite;
 	width: 65px;
 	height: 65px;
 }
 @mixin sprite-med {
-	@include sprite;
 	width: 45px;
 	height: 45px;
 }
 @mixin sprite-small {
-	@include sprite;
 	width: 38px;
 	height: 38px;
 }

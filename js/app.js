@@ -31,34 +31,34 @@ function setPostIcons() {
 function setPostIcon (cat, $el) {
 	switch (cat) {
 		case 'share':
-			$el.css('background-position', '-4px -453px').css('background-color', '#EA9623');
+			$el.css('background-color', '#EA9623').html('l');
 		break;
 		case 'algorithm':
-			$el.css('background-position', '-4px -907px').css('background-color', '#000');
+			$el.css('background-color', '#000').html('p');
 		break;
 		case 'development':
-			$el.css('background-position', '-4px -518px').css('background-color', '#C42624');
+			$el.css('background-color', '#C42624').html('c');
 		break;
 		case 'design':
-			$el.css('background-position', '-4px 0px').css('background-color', '#30F2BF');
+			$el.css('background-color', '#30F2BF').html('d');
 		break;
 		case 'beginner':
-			$el.css('background-position', '-4px -64px').css('background-color', '#1FC6E4');
+			$el.css('background-color', '#1FC6E4').html('b');
 		break;
 		case 'observation':
-			$el.css('background-position', '-4px -843px').css('background-color', '#E06934');
+			$el.css('background-color', '#E06934').html('o');
 		break;
 		case 'news':
-			$el.css('background-position', '-4px -130px').css('background-color', '#E06934');
+			$el.css('background-color', '#E06934').html('n');
 		break;
 		case 'writing':
-			$el.css('background-position', '-4px -194px').css('background-color', '#E06934');
+			$el.css('background-color', '#E06934').html('w');
 		break;
 		case 'tutorial':
-			$el.css('background-position', '-4px -778px').css('background-color', '#F086B6');
+			$el.css('background-color', '#F086B6').html('m');
 		break;
 		case 'aha':
-			$el.css('background-position', '-4px -712px').css('background-color', '#FFE000');
+			$el.css('background-color', '#FFE000').html('a');
 		break;
 	};
 	$el.show();

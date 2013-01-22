@@ -42,8 +42,8 @@
 
 @font-face {
   font-family: 'mbsprite';
-  src: url("fonts/mbsprite.eot");
-  src: url("fonts/mbsprite.eot?#iefix") format("embedded-opentype"), url("fonts/mbsprite.svg#mbsprite") format("svg"), url("fonts/mbsprite.woff") format("woff"), url("fonts/mbsprite.ttf") format("truetype");
+  src: url("../fonts/mbsprite.eot");
+  src: url("../fonts/mbsprite.eot?#iefix") format("embedded-opentype"), url("../fonts/mbsprite.svg#mbsprite") format("svg"), url("../fonts/mbsprite.woff") format("woff"), url("../fonts/mbsprite.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -66,7 +66,7 @@ you can use the generic selector below, but it's slower:
 [class*="icon-"]:before {
 */
 /* line 88, ../sass/fonts.scss */
-.icon-twitter:before, .icon-tutorial:before, .icon-stack:before, .icon-share:before, .icon-rss:before, .icon-pencil:before, .icon-pi:before, .icon-obs:before, .icon-news:before, .icon-right:before, .icon-left:before, .icon-gh:before, .icon-dev:before, .icon-design:before, .icon-begg:before, .icon-aha:before {
+.icon-twitter:before, .icon-tutorial:before, .icon-stack:before, .icon-share:before, .icon-rss:before, .icon-pencil:before, .icon-pi:before, .icon-obs:before, .icon-news:before, .icon-right:before, .icon-left:before, .icon-gh:before, .icon-dev:before, .icon-design:before, .icon-begg:before, .icon-aha:before, .icon-imb:before {
   font-family: 'mbsprite';
   speak: none;
   font-style: normal;
@@ -153,4 +153,28 @@ you can use the generic selector below, but it's slower:
 /* line 141, ../sass/fonts.scss */
 .icon-aha:before {
   content: "\61";
+}
+
+/* line 144, ../sass/fonts.scss */
+.icon-imb:before {
+  content: "\69";
+}
+
+/* line 148, ../sass/fonts.scss */
+.mbs {
+  font-family: "mbsprite";
+  color: white;
+  line-height: 1em;
+}
+/* line 152, ../sass/fonts.scss */
+.mbs.small {
+  font-size: 36px;
+}
+/* line 155, ../sass/fonts.scss */
+.mbs.medium {
+  font-size: 45px;
+}
+/* line 158, ../sass/fonts.scss */
+.mbs.large {
+  font-size: 65px;
 }
