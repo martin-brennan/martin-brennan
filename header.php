@@ -53,7 +53,7 @@
 					<a href="/" title="Martin Brennan">Martin Brennan</a>
 				</h1>
 				<p class="header-desc">
-					Web developer, tech afficinado, liquor connoisseur.
+					Web developer, tech aficionado, liquor connoisseur.
 				</p>
 			</div>
 			<div class="head-line"></div>
