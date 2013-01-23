@@ -25,8 +25,8 @@
 		<!-- Check if there is more than one page of posts, if there are then display the page navigation links -->
 		<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 			<div class="pagination">
-				<?php echo get_next_posts_link('<div class="round page" title="Previous" alt="Previous" style="background-position: -5px -649px; background-color: #E41F66;"></div>'); ?>
-				<?php echo get_previous_posts_link('<div class="round page" title="Next" alt="Next" style="background-position: -5px -583px; background-color: #E41F66;"></div>'); ?>
+				<?php echo get_next_posts_link('<div class="mbs large round page" title="Previous" alt="Previous" style="background-color: #E41F66;">1</div>'); ?>
+				<?php echo get_previous_posts_link('<div class="mbs large round page" title="Next" alt="Next" style="background-color: #E41F66;">2</div>'); ?>
 			</div>
 			<div class="clearfix"></div>
 		<?php else: ?>

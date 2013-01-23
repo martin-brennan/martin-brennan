@@ -29,6 +29,7 @@ function setPostIcons() {
  * @param {element} $el The post icon element.
  */
 function setPostIcon (cat, $el) {
+	cat = cat.toLowerCase();
 	switch (cat) {
 		case 'share':
 			$el.css('background-color', '#EA9623').html('l');
