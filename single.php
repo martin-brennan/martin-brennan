@@ -17,6 +17,8 @@
 						<?php dd_twitter_generate('Compact','twitter_username') ?>
 						<?php dd_google1_generate('Compact (20px)') ?>
 					</div>
+					<!-- Post comments -->
+					<p><?php comments_template(); ?></p>
 				</article>
 			<?php endwhile; ?>
 		<?php endif; ?>
