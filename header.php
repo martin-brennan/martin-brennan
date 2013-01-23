@@ -13,15 +13,15 @@
 		<?php wp_head(); ?>
 		<script type="text/javascript">
 
-		  // var _gaq = _gaq || [];
-		  // _gaq.push(['_setAccount', 'UA-33676213-1']);
-		  // _gaq.push(['_trackPageview']);
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-33676213-1']);
+		  _gaq.push(['_trackPageview']);
 
-		  // (function() {
-		  //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		  //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		  //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  // })();
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
 
 		</script>
 	</head>
@@ -50,7 +50,7 @@
 					<img class="round head av" src="http://www.gravatar.com/avatar/e61d50823d8a61ae2e50aa1b62c29ab5?s=960" title="Martin Brennan" style="width:40px; height: 40px; display:none;" />
 				</div>
 				<h1 class="header-title">
-					Martin Brennan
+					<a href="/" title="Martin Brennan">Martin Brennan</a>
 				</h1>
 				<p class="header-desc">
 					Web developer, tech afficinado, liquor connoisseur.

@@ -85,7 +85,9 @@ a {
 h1 {
 	padding: 2px 0;
 	&.header-title {
-		@include neue(325%, 1em);
+		a {
+			@include neue(325%, 1em);
+		}
 		padding: 0;
 	}
 	a {
