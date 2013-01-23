@@ -9,7 +9,9 @@
 		$width: 720px;
 		h1 {
 			&.header-title {
-				@include neue(308%, 1em);
+				a {
+					@include neue(308%, 1em);
+				}
 				padding: 0;
 			}
 			a {
@@ -53,7 +55,9 @@
 		$width: 976px;
 		h1 {
 			&.header-title {
-				@include neue(308%, 1em);
+				a {
+					@include neue(308%, 1em);
+				}
 				padding: 0;
 			}
 			a {
@@ -95,7 +99,9 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
 		$width: 100%;
 		h1 {
 			&.header-title {
-				@include neue(180%, 1em);
+				a {
+					@include neue(180%, 1em);
+				}
 				padding: 0;
 			}
 			a {
@@ -218,7 +224,9 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:landscape)
 		$width: 100%;
 		h1 {
 			&.header-title {
-				@include neue(180%, 1em);
+				a {
+					@include neue(180%, 1em);
+				}
 				padding: 0;
 			}
 			a {
