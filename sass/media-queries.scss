@@ -1,12 +1,12 @@
 @import "variables";
 @import "mixins";
+$width: 100%;
 /* iPads (portrait) ----------- */
 @media only screen 
 	and (min-device-width : 768px) 
 	and (max-device-width : 1024px)
 	and (orientation: portrait)
 	{
-		$width: 100%;
 		h1 {
 			&.header-title {
 				a {
@@ -66,7 +66,6 @@
 	and (max-device-width : 1024px)
 	and (orientation: landscape)
 	{
-		$width: 100%;
 		h1 {
 			&.header-title {
 				a {
@@ -124,7 +123,6 @@
 @media only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:portrait),
 only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
 	{
-		$width: 100%;
 		h1 {
 			&.header-title {
 				a {
@@ -162,7 +160,7 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
 			display: none;
 		}
 		.head-line {
-			width: 98%;
+			width: 90%;
 			left: 10px;
 		}
 		.header-phone img {
@@ -249,7 +247,6 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
 @media only screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:landscape),
 only screen and (min-device-pixel-ratio : 2)  and (orientation:landscape)
 	{
-		$width: 100%;
 		h1 {
 			&.header-title {
 				a {
@@ -287,7 +284,7 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:landscape)
 			display: none;
 		}
 		.head-line {
-			width: 98%;
+			width: 94%;
 			left: 10px;
 		}
 		.header-phone img {

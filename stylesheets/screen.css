@@ -463,7 +463,7 @@ header {
 /* line 141, ../sass/screen.scss */
 .head-line {
   position: absolute;
-  width: 100%;
+  width: 99.6%;
   left: 0;
   border: 3px solid #e52066;
 }
@@ -737,11 +737,11 @@ footer a {
 }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* line 71, ../sass/media-queries.scss */
+  /* line 70, ../sass/media-queries.scss */
   h1.header-title {
     padding: 0;
   }
-  /* line 72, ../sass/media-queries.scss */
+  /* line 71, ../sass/media-queries.scss */
   h1.header-title a {
     font-size: 308%;
     line-height: 1em;
@@ -749,7 +749,7 @@ footer a {
     font-weight: 700;
     color: #000;
   }
-  /* line 77, ../sass/media-queries.scss */
+  /* line 76, ../sass/media-queries.scss */
   h1 a {
     font-size: 225%;
     line-height: 1em;
@@ -758,34 +758,34 @@ footer a {
     color: #000;
   }
 
-  /* line 81, ../sass/media-queries.scss */
+  /* line 80, ../sass/media-queries.scss */
   header {
     width: 100%;
     margin: 0 auto;
   }
 
-  /* line 85, ../sass/media-queries.scss */
+  /* line 84, ../sass/media-queries.scss */
   .container {
     width: 100%;
   }
 
-  /* line 88, ../sass/media-queries.scss */
+  /* line 87, ../sass/media-queries.scss */
   footer {
     height: auto;
     margin: 60px auto;
     width: 100%;
   }
-  /* line 92, ../sass/media-queries.scss */
+  /* line 91, ../sass/media-queries.scss */
   footer p {
     font-size: 75%;
     color: #6a6a6a;
   }
-  /* line 96, ../sass/media-queries.scss */
+  /* line 95, ../sass/media-queries.scss */
   footer a {
     font-family: "bariol-bold";
   }
 
-  /* line 100, ../sass/media-queries.scss */
+  /* line 99, ../sass/media-queries.scss */
   p {
     font-size: 120%;
     line-height: 1.6em;
@@ -793,23 +793,23 @@ footer a {
     color: #000;
   }
 
-  /* line 103, ../sass/media-queries.scss */
+  /* line 102, ../sass/media-queries.scss */
   .footer-after {
     display: block;
     width: 100%;
   }
 
-  /* line 107, ../sass/media-queries.scss */
+  /* line 106, ../sass/media-queries.scss */
   .footer-social {
     width: 100%;
     margin: 14px auto;
   }
-  /* line 111, ../sass/media-queries.scss */
+  /* line 110, ../sass/media-queries.scss */
   .footer-social a div.round.foot {
     margin: 0 60px !important;
   }
 
-  /* line 116, ../sass/media-queries.scss */
+  /* line 115, ../sass/media-queries.scss */
   .footer-center {
     width: 80%;
     margin: 0 auto;
@@ -818,11 +818,11 @@ footer a {
 }
 /* iPhones (portrait) ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), only screen and (min-device-pixel-ratio: 2) and (orientation: portrait) {
-  /* line 129, ../sass/media-queries.scss */
+  /* line 127, ../sass/media-queries.scss */
   h1.header-title {
     padding: 0;
   }
-  /* line 130, ../sass/media-queries.scss */
+  /* line 128, ../sass/media-queries.scss */
   h1.header-title a {
     font-size: 180%;
     line-height: 1em;
@@ -830,7 +830,7 @@ footer a {
     font-weight: 700;
     color: #000;
   }
-  /* line 135, ../sass/media-queries.scss */
+  /* line 133, ../sass/media-queries.scss */
   h1 a {
     font-size: 120%;
     line-height: 1em;
@@ -840,7 +840,7 @@ footer a {
     word-wrap: break-word;
   }
 
-  /* line 140, ../sass/media-queries.scss */
+  /* line 138, ../sass/media-queries.scss */
   h2 {
     font-size: 95%;
     line-height: 1em;
@@ -850,7 +850,7 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 145, ../sass/media-queries.scss */
+  /* line 143, ../sass/media-queries.scss */
   h3 {
     font-size: 70%;
     line-height: 1em;
@@ -860,7 +860,7 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 150, ../sass/media-queries.scss */
+  /* line 148, ../sass/media-queries.scss */
   h4 {
     font-size: 55%;
     line-height: 1em;
@@ -870,44 +870,44 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 154, ../sass/media-queries.scss */
+  /* line 152, ../sass/media-queries.scss */
   body {
     padding: 0 10px;
   }
 
-  /* line 157, ../sass/media-queries.scss */
+  /* line 155, ../sass/media-queries.scss */
   header {
     width: 100%;
     margin: 0 auto;
   }
 
-  /* line 161, ../sass/media-queries.scss */
+  /* line 159, ../sass/media-queries.scss */
   .header-social {
     display: none;
   }
 
-  /* line 164, ../sass/media-queries.scss */
+  /* line 162, ../sass/media-queries.scss */
   .head-line {
-    width: 98%;
+    width: 90%;
     left: 10px;
   }
 
-  /* line 168, ../sass/media-queries.scss */
+  /* line 166, ../sass/media-queries.scss */
   .header-phone img {
     display: block !important;
   }
 
-  /* line 172, ../sass/media-queries.scss */
+  /* line 170, ../sass/media-queries.scss */
   nav ul {
     margin: 15px 0;
   }
-  /* line 174, ../sass/media-queries.scss */
+  /* line 172, ../sass/media-queries.scss */
   nav ul li {
     float: left;
     list-style-type: none;
     margin: 0 25px 0 0;
   }
-  /* line 178, ../sass/media-queries.scss */
+  /* line 176, ../sass/media-queries.scss */
   nav ul li a {
     color: black;
     font-size: 100%;
@@ -918,26 +918,26 @@ footer a {
     font-weight: 700;
   }
 
-  /* line 186, ../sass/media-queries.scss */
+  /* line 184, ../sass/media-queries.scss */
   .container {
     width: 100%;
   }
 
-  /* line 189, ../sass/media-queries.scss */
+  /* line 187, ../sass/media-queries.scss */
   p {
     font-size: 80%;
     line-height: 1.6em;
     font-family: "bariol-regular", Sans-Serif;
     color: #000;
   }
-  /* line 191, ../sass/media-queries.scss */
+  /* line 189, ../sass/media-queries.scss */
   p.post-meta {
     font-size: 80%;
     line-height: 1.6em;
     font-family: "bariol-regular", Sans-Serif;
     color: #000;
   }
-  /* line 194, ../sass/media-queries.scss */
+  /* line 192, ../sass/media-queries.scss */
   p.header-desc {
     font-size: 40%;
     line-height: 1.6em;
@@ -946,65 +946,65 @@ footer a {
     color: #6a6a6a;
   }
 
-  /* line 199, ../sass/media-queries.scss */
+  /* line 197, ../sass/media-queries.scss */
   .archive-item, .repo-result span {
     font-size: 80%;
   }
 
-  /* line 202, ../sass/media-queries.scss */
+  /* line 200, ../sass/media-queries.scss */
   code {
     font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
     font-size: 80%;
     overflow: auto;
   }
 
-  /* line 207, ../sass/media-queries.scss */
+  /* line 205, ../sass/media-queries.scss */
   pre {
     width: 95%;
   }
 
-  /* line 210, ../sass/media-queries.scss */
+  /* line 208, ../sass/media-queries.scss */
   footer {
     height: auto;
     margin: 60px auto;
     width: 100%;
   }
-  /* line 214, ../sass/media-queries.scss */
+  /* line 212, ../sass/media-queries.scss */
   footer p {
     font-size: 50%;
     color: #6a6a6a;
   }
-  /* line 218, ../sass/media-queries.scss */
+  /* line 216, ../sass/media-queries.scss */
   footer a {
     font-family: "bariol-bold";
   }
 
-  /* line 222, ../sass/media-queries.scss */
+  /* line 220, ../sass/media-queries.scss */
   .footer-after {
     display: block;
     width: 100%;
   }
 
-  /* line 226, ../sass/media-queries.scss */
+  /* line 224, ../sass/media-queries.scss */
   .footer-center {
     width: 80%;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* line 231, ../sass/media-queries.scss */
+  /* line 229, ../sass/media-queries.scss */
   .footer-social {
     width: auto;
     margin: 14px auto;
   }
 
-  /* line 237, ../sass/media-queries.scss */
+  /* line 235, ../sass/media-queries.scss */
   img.round, div.round {
     -webkit-border-radius: 60px 60px;
     -moz-border-radius: 60px / 60px;
     border-radius: 60px / 60px;
   }
-  /* line 239, ../sass/media-queries.scss */
+  /* line 237, ../sass/media-queries.scss */
   img.round.foot, div.round.foot {
     width: 38px;
     height: 38px;
@@ -1014,11 +1014,11 @@ footer a {
 }
 /* iPhones (landscape) ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape), only screen and (min-device-pixel-ratio: 2) and (orientation: landscape) {
-  /* line 254, ../sass/media-queries.scss */
+  /* line 251, ../sass/media-queries.scss */
   h1.header-title {
     padding: 0;
   }
-  /* line 255, ../sass/media-queries.scss */
+  /* line 252, ../sass/media-queries.scss */
   h1.header-title a {
     font-size: 180%;
     line-height: 1em;
@@ -1026,7 +1026,7 @@ footer a {
     font-weight: 700;
     color: #000;
   }
-  /* line 260, ../sass/media-queries.scss */
+  /* line 257, ../sass/media-queries.scss */
   h1 a {
     font-size: 120%;
     line-height: 1em;
@@ -1036,7 +1036,7 @@ footer a {
     word-wrap: break-word;
   }
 
-  /* line 265, ../sass/media-queries.scss */
+  /* line 262, ../sass/media-queries.scss */
   h2 {
     font-size: 95%;
     line-height: 1em;
@@ -1046,7 +1046,7 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 270, ../sass/media-queries.scss */
+  /* line 267, ../sass/media-queries.scss */
   h3 {
     font-size: 70%;
     line-height: 1em;
@@ -1056,7 +1056,7 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 275, ../sass/media-queries.scss */
+  /* line 272, ../sass/media-queries.scss */
   h4 {
     font-size: 55%;
     line-height: 1em;
@@ -1066,44 +1066,44 @@ footer a {
     margin: 10px 0;
   }
 
-  /* line 279, ../sass/media-queries.scss */
+  /* line 276, ../sass/media-queries.scss */
   body {
     padding: 0 10px;
   }
 
-  /* line 282, ../sass/media-queries.scss */
+  /* line 279, ../sass/media-queries.scss */
   header {
     width: 100%;
     margin: 0 auto;
   }
 
-  /* line 286, ../sass/media-queries.scss */
+  /* line 283, ../sass/media-queries.scss */
   .header-social {
     display: none;
   }
 
-  /* line 289, ../sass/media-queries.scss */
+  /* line 286, ../sass/media-queries.scss */
   .head-line {
-    width: 98%;
+    width: 94%;
     left: 10px;
   }
 
-  /* line 293, ../sass/media-queries.scss */
+  /* line 290, ../sass/media-queries.scss */
   .header-phone img {
     display: block !important;
   }
 
-  /* line 297, ../sass/media-queries.scss */
+  /* line 294, ../sass/media-queries.scss */
   nav ul {
     margin: 15px 0;
   }
-  /* line 299, ../sass/media-queries.scss */
+  /* line 296, ../sass/media-queries.scss */
   nav ul li {
     float: left;
     list-style-type: none;
     margin: 0 25px 0 0;
   }
-  /* line 303, ../sass/media-queries.scss */
+  /* line 300, ../sass/media-queries.scss */
   nav ul li a {
     color: black;
     font-size: 100%;
@@ -1114,26 +1114,26 @@ footer a {
     font-weight: 700;
   }
 
-  /* line 311, ../sass/media-queries.scss */
+  /* line 308, ../sass/media-queries.scss */
   .container {
     width: 100%;
   }
 
-  /* line 314, ../sass/media-queries.scss */
+  /* line 311, ../sass/media-queries.scss */
   p {
     font-size: 60%;
     line-height: 1.6em;
     font-family: "bariol-regular", Sans-Serif;
     color: #000;
   }
-  /* line 316, ../sass/media-queries.scss */
+  /* line 313, ../sass/media-queries.scss */
   p.post-meta {
     font-size: 60%;
     line-height: 1.6em;
     font-family: "bariol-regular", Sans-Serif;
     color: #000;
   }
-  /* line 319, ../sass/media-queries.scss */
+  /* line 316, ../sass/media-queries.scss */
   p.header-desc {
     font-size: 60%;
     line-height: 1.6em;
@@ -1142,66 +1142,66 @@ footer a {
     color: #6a6a6a;
   }
 
-  /* line 324, ../sass/media-queries.scss */
+  /* line 321, ../sass/media-queries.scss */
   .archive-item {
     font-size: 60%;
     line-height: 1em;
   }
 
-  /* line 328, ../sass/media-queries.scss */
+  /* line 325, ../sass/media-queries.scss */
   code {
     font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
     font-size: 60%;
     overflow: auto;
   }
 
-  /* line 333, ../sass/media-queries.scss */
+  /* line 330, ../sass/media-queries.scss */
   pre {
     width: 95%;
   }
 
-  /* line 336, ../sass/media-queries.scss */
+  /* line 333, ../sass/media-queries.scss */
   footer {
     height: auto;
     margin: 60px auto;
     width: 100%;
   }
-  /* line 340, ../sass/media-queries.scss */
+  /* line 337, ../sass/media-queries.scss */
   footer p {
     font-size: 50%;
     color: #6a6a6a;
   }
-  /* line 344, ../sass/media-queries.scss */
+  /* line 341, ../sass/media-queries.scss */
   footer a {
     font-family: "bariol-bold";
   }
 
-  /* line 348, ../sass/media-queries.scss */
+  /* line 345, ../sass/media-queries.scss */
   .footer-after {
     display: block;
     width: 100%;
   }
 
-  /* line 352, ../sass/media-queries.scss */
+  /* line 349, ../sass/media-queries.scss */
   .footer-center {
     width: 80%;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* line 357, ../sass/media-queries.scss */
+  /* line 354, ../sass/media-queries.scss */
   .footer-social {
     width: auto;
     margin: 14px auto;
   }
 
-  /* line 363, ../sass/media-queries.scss */
+  /* line 360, ../sass/media-queries.scss */
   img.round, div.round {
     -webkit-border-radius: 60px 60px;
     -moz-border-radius: 60px / 60px;
     border-radius: 60px / 60px;
   }
-  /* line 365, ../sass/media-queries.scss */
+  /* line 362, ../sass/media-queries.scss */
   img.round.foot, div.round.foot {
     width: 38px;
     height: 38px;
