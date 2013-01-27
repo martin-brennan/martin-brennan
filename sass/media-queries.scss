@@ -58,6 +58,9 @@ $width: 100%;
 			margin: 0 auto;
 			text-align: center;
 		}
+		iframe {
+			width: $width;
+		}
 }
 
 /* iPads (landscape) ----------- */
@@ -116,6 +119,9 @@ $width: 100%;
 			width: 80%;
 			margin: 0 auto;
 			text-align: center;
+		}
+		iframe {
+			width: $width;
 		}
 }
 
@@ -241,6 +247,9 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:portrait)
 				}
 			}
 		}
+		iframe {
+			width: $width;
+		}
 	}
 
 /* iPhones (landscape) ----------- */
@@ -365,5 +374,8 @@ only screen and (min-device-pixel-ratio : 2)  and (orientation:landscape)
 					margin: 0 26px;
 				}
 			}
+		}
+		iframe {
+			width: $width;
 		}
 	}
