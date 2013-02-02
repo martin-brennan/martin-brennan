@@ -307,7 +307,7 @@
 
   /* line 206, ../sass/media-queries.scss */
   code {
-    font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
+    font-family: "menloregular", "Monaco", "Consolas", Monospace;
     font-size: 80%;
     overflow: auto;
   }
@@ -509,7 +509,7 @@
 
   /* line 334, ../sass/media-queries.scss */
   code {
-    font-family: "bariol-regular", "Monaco", "Consolas", Monospace;
+    font-family: "menloregular", "Monaco", "Consolas", Monospace;
     font-size: 60%;
     overflow: auto;
   }
