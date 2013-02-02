@@ -29,40 +29,42 @@ function setPostIcons() {
  * @param {element} $el The post icon element.
  */
 function setPostIcon (cat, $el) {
+	if (cat !== undefined) {
 	cat = cat.toLowerCase();
-	switch (cat) {
-		case 'share':
-			$el.css('background-color', '#EA9623').html('l');
-		break;
-		case 'algorithm':
-			$el.css('background-color', '#000').html('p');
-		break;
-		case 'development':
-			$el.css('background-color', '#C42624').html('c');
-		break;
-		case 'design':
-			$el.css('background-color', '#30F2BF').html('d');
-		break;
-		case 'beginner':
-			$el.css('background-color', '#1FC6E4').html('b');
-		break;
-		case 'observation':
-			$el.css('background-color', '#E06934').html('o');
-		break;
-		case 'news':
-			$el.css('background-color', '#E06934').html('n');
-		break;
-		case 'writing':
-			$el.css('background-color', '#E06934').html('w');
-		break;
-		case 'tutorial':
-			$el.css('background-color', '#F086B6').html('m');
-		break;
-		case 'aha':
-			$el.css('background-color', '#FFE000').html('a');
-		break;
-	};
-	$el.show();
+		switch (cat) {
+			case 'share':
+				$el.css('background-color', '#EA9623').html('l');
+			break;
+			case 'algorithm':
+				$el.css('background-color', '#000').html('p');
+			break;
+			case 'development':
+				$el.css('background-color', '#C42624').html('c');
+			break;
+			case 'design':
+				$el.css('background-color', '#30F2BF').html('d');
+			break;
+			case 'beginner':
+				$el.css('background-color', '#1FC6E4').html('b');
+			break;
+			case 'observation':
+				$el.css('background-color', '#E06934').html('o');
+			break;
+			case 'news':
+				$el.css('background-color', '#E06934').html('n');
+			break;
+			case 'writing':
+				$el.css('background-color', '#E06934').html('w');
+			break;
+			case 'tutorial':
+				$el.css('background-color', '#F086B6').html('m');
+			break;
+			case 'aha':
+				$el.css('background-color', '#FFE000').html('a');
+			break;
+		};
+		$el.show();
+	}
 }
 
 //Get the repository information as a JSONP callback, using the API URL in the script tag below.
