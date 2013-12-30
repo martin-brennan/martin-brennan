@@ -15,9 +15,7 @@
 					<!-- Post content up until <!--more>-->
 					<?php the_content(); ?>
 					<div class="post-share">
-						<?php dd_fblike_generate('Like Button Count') ?>
-						<?php dd_twitter_generate('Compact','twitter_username') ?>
-						<?php dd_google1_generate('Compact (20px)') ?>
+						
 					</div>
 				</article>
 			<?php endwhile; ?>

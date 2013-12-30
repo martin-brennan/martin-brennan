@@ -1,5 +1,20 @@
 		<footer>
 			<?php wp_footer(); ?>
+			<table style="width: 100%">
+				<tr>
+					<td align="center">
+						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Footer -->
+						<ins class="adsbygoogle"
+						     style="display:inline-block;width:728px;height:90px"
+						     data-ad-client="ca-pub-2399752909796795"
+						     data-ad-slot="4224940660"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+					</td>
+				</tr>
+			</table>
 			<div class="footer-center">
 				<div class="footer-social">
 					<a href="http://martin-brennan.com/feed" target="_blank" title="Add Martin Brennan to your RSS Feeds">
@@ -29,6 +44,8 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/app.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/highlight/highlight.pack.js"></script>
 	<!-- Load the JSONP data using the GitHub API -->
-	<script src="https://api.github.com/users/martin-brennan/repos?callback=getRepos"></script>
+	<?php if( is_page('Projects')) { ?>
+		<script src="https://api.github.com/users/martin-brennan/repos?callback=getRepos"></script>
+	<?php } ?>
 	<script>hljs.initHighlightingOnLoad();</script>
 </html>

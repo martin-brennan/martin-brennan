@@ -31,6 +31,9 @@
 			<img class="round side av" src="http://www.gravatar.com/avatar/e61d50823d8a61ae2e50aa1b62c29ab5?s=90" title="Martin Brennan" />
 			<div class="header-main">
 				<div class="header-social">
+					<a href="https://plus.google.com/+MartinBrennan?rel=author" target="_blank" title="Martin Brennan on Google+">
+						<div class="mbs medium round head" style=" background-color: #D7512C;">i</div>
+					</a>
 					<a href="http://martin-brennan.com/feed" target="_blank" title="Add Martin Brennan to your RSS Feeds">
 						<div class="mbs medium round head" style=" background-color: #ea9522;">r</div>
 					</a>
