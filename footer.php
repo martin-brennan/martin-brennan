@@ -2,7 +2,7 @@
 			<?php wp_footer(); ?>
 			<table style="width: 100%">
 				<tr>
-					<td align="center">
+					<td align="center" style="text-align: center">
 						<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 						<!-- Footer -->
 						<ins class="adsbygoogle"
