@@ -32,7 +32,7 @@
 			<div class="header-main">
 				<div class="header-social">
 					<a href="https://plus.google.com/+MartinBrennan?rel=author" target="_blank" title="Martin Brennan on Google+">
-						<div class="mbs medium round head" style=" background-color: #D7512C;">i</div>
+						<div class="mbs medium round head" style=" background-color: #D7512C; font-family: 'catullregular' !important; text-align:center; font-size:35px;">g</div>
 					</a>
 					<a href="http://martin-brennan.com/feed" target="_blank" title="Add Martin Brennan to your RSS Feeds">
 						<div class="mbs medium round head" style=" background-color: #ea9522;">r</div>

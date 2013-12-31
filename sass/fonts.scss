@@ -80,6 +80,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'catullregular';
+    src: url('../fonts/catull-webfont.eot');
+    src: url('../fonts/catull-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/catull-webfont.woff') format('woff'),
+         url('../fonts/catull-webfont.ttf') format('truetype'),
+         url('../fonts/catull-webfont.svg#catullregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
     font-family: 'mbsprite';
