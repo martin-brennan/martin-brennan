@@ -1,0 +1,33 @@
+@media only screen and (min-width: 768px) {
+    .about-avatar {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .sidebar {
+    	display:none;
+    }
+
+    .container {
+	    div.content {
+	    	width: 100% !important;
+	    }
+	}
+
+	p {
+		font-size: 90%;
+	}
+
+	.mobile-nav {
+		display: block;
+	}
+
+	.about-avatar {
+		display: block;
+	}
+}
