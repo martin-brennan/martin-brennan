@@ -4,8 +4,8 @@
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<article>				
-				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<p class="post-meta"><? the_date("l F j, Y"); ?> with <?php comments_popup_link('0 comments', '1 comment', '% comments'); ?>. </p>
+				<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 				<?php the_content(); ?>
 			</article>
 		<?php endwhile; ?>
