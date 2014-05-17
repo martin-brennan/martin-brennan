@@ -19,6 +19,6 @@
 				</article>
 			<?php endwhile; ?>
 		<?php endif; ?>
+		<!-- Get the footer.php file -->
+		<?php get_footer(); ?>
 	</div>
-	<!-- Get the footer.php file -->
-	<?php get_footer(); ?>
